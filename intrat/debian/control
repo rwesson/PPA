@@ -1,5 +1,5 @@
 Source: intrat
-Section: misc
+Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Build-Depends: debhelper (>= 9.0.0), gfortran

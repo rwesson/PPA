@@ -1,4 +1,4 @@
-alfa (0.98-1) trusty; urgency=low
+alfa (0.98-2) trusty; urgency=low
 
   * Fixed segmentation fault caused when no sky lines were present but sky subtraction was requested
 

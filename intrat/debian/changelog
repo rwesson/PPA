@@ -1,5 +1,5 @@
-intrat (1.0-1) trusty; urgency=low
+intrat (1.0-2) trusty; urgency=low
 
-  * Initial release (Closes: )
+  * fixed section
 
- -- Roger Wesson <rw@nebulousresearch.org>  Wed, 30 Dec 2015 00:49:38 -0300
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 11 Jun 2016 10:52:45 +0000
