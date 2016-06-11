@@ -1,0 +1,31 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: change path.h to refer to standard installation directory and prevent system variable overriding it. 
+--- a/source/path.h
++++ b/source/path.h
+@@ -26,7 +26,7 @@
+ 
+ /* The value below will be superseded if
+  * specified by a compiler argument */
+-#ifndef CLOUDY_DATA_PATH 
++/*#ifndef CLOUDY_DATA_PATH */
+ 
+ /* 
+  * Specify a search path to data directories here.
+@@ -35,7 +35,7 @@
+  * data directories using the standard colon-separated list of Unix paths. You
+  * can enter as many paths as you like. One example could be: */
+ 
+-//#define CLOUDY_DATA_PATH "/usr/local/cloudy/data:/home/user/cloudy/data"
++#define CLOUDY_DATA_PATH "/usr/share/cloudy/data"
+ 
+ 
+ /* The following (commented-out) example shows the format for Windows. You can
+@@ -50,7 +50,7 @@
+  * remove the unix version 12 lines above this line (or comment it out)
+  * NB - make sure that the hash-sign "#" is in the first column */
+ 
+-#endif
++/*#endif*/
+ 
+ /* That should be all you need to change! */
+ 

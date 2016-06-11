@@ -1,0 +1,15 @@
+neat (2.04-1) trusty; urgency=low
+
+  * depends on OpenMP
+  * He II data was missing from package
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 May 2016 23:56:28 -0300
+
+neat (2.03-1) trusty; urgency=low
+
+  * weighting scheme for all calculations now user configurable
+  * extensive debugging to avoid previously tolerated floating point exceptions
+  * more efficient extinction calculation and line ID assignment
+  * He2+/H+ abundance calculated from all optical He II lines instead of just 4686
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 9 May 2016 11:39:55 -0300

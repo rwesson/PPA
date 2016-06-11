@@ -1,0 +1,22 @@
+Source: neat
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               gfortran,
+               libc6 (>= 2.14),
+               libgfortran3 (>= 4.6),
+               libgomp1 (>= 4.2.1)
+Standards-Version: 3.9.5
+Homepage: https://github.com/rwesson/NEAT
+
+Package: neat
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Nebular Empirical Analysis Tool
+ NEAT analyses lists of emission line fluxes measured from the spectra of
+ photoionised nebulae such as planetary nebulae and HII regions.  It
+ determines the extinction, and then adopts a three zone model to determine
+ temperatures, densities, and ionic and total abundances, from collisionally
+ excited lines and recombination lines.  It calculates uncertainties if
+ required, using a Monte Carlo technique.  

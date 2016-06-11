@@ -1,0 +1,6 @@
+mocassin (2.02.70.6-1) trusty; urgency=low
+
+  * added benchmarks directory
+  * added man page
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 28 Dec 2015 22:47:35 -0300

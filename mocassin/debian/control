@@ -1,0 +1,18 @@
+Source: mocassin
+Section: misc
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               libc6 (>= 2.14),
+               libgcc1 (>= 1:4.1.1),
+               libgfortran3 (>= 4.6),
+               libmpich-dev (>= 3.0.4)
+Standards-Version: 3.9.5
+Homepage: http://www.3d-mocassin.net
+
+Package: mocassin
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: MOnte CArlo SimulationS of Ionised Nebulae
+ Fully 3D radiative transfer of gas and dust in arbitrary geometries, with
+ single, multiple, planar or diffuse ionising sources
