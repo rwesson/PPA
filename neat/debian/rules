@@ -5,4 +5,8 @@
 #export DH_VERBOSE=1
 
 %:
-	dh $@ 
+	dh $@
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod a+x debian/neat/usr/share/neat/plot.sh

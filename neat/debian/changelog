@@ -1,3 +1,9 @@
+neat (2.05-1ppa1~xenial1) xenial; urgency=low
+
+  * fixes to autocomplete etc
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 28 Jul 2016 08:22:09 +0000
+
 neat (2.04-2) trusty; urgency=low
 
   * fixed section

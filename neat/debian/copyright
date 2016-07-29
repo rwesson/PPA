@@ -3,7 +3,13 @@ Upstream-Name: neat
 Source: https://github.com/rwesson/NEAT
 
 Files: debian/*
-Copyright: 2015 <Roger Wesson, Dave Stock, Peter Scicluna
+Copyright: 2016 Roger Wesson
+License: GPL-3+
+
+Files: *
+Copyright: 2015 Roger Wesson, Dave Stock, Peter Scicluna
+License: GPL-3+
+
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
