@@ -14,6 +14,7 @@ Homepage: http://www.nublado.org
 Package: cloudy
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, cloudy-data
+Suggests: cloudy-doc
 Description: Photoionization simulations for the discriminating astrophysicist since 1978
  Cloudy is an open source plasma simulation code that is designed to simulate
  conditions in a nonequilibrium gas, and predict its spectrum. The code
@@ -28,12 +29,28 @@ Package: cloudy-data
 Architecture: all
 Depends: ${misc:Depends}
 Description: Data for the photoionisation code cloudy
- Platform-independent atomic and molecular data for use in the photoionisation
- code cloudy
+ Cloudy is an open source plasma simulation code that is designed to simulate
+ conditions in a nonequilibrium gas, and predict its spectrum. The code
+ incorporates physical processes from first principles, as much as possible.
+ The goal is to simulate the ionization, level populations, molecular state,
+ and thermal state, over all extremes of density and temperature.  The approach
+ of working from fundamental processes means that Cloudy can be applied to such
+ diverse regions as the corona of a star, the intergalactic medium, or the
+ accretion disk near the supermassive black hole in a luminous quasar.  This
+ package contains platform-independent atomic and molecular data for use in the
+ code.
 
 Package: cloudy-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Description: Documentation for the photoionisation code cloudy
- Hazy, the documentation for running the photoionisation code cloudy
+ Cloudy is an open source plasma simulation code that is designed to simulate
+ conditions in a nonequilibrium gas, and predict its spectrum. The code
+ incorporates physical processes from first principles, as much as possible.
+ The goal is to simulate the ionization, level populations, molecular state,
+ and thermal state, over all extremes of density and temperature.  The approach
+ of working from fundamental processes means that Cloudy can be applied to such
+ diverse regions as the corona of a star, the intergalactic medium, or the
+ accretion disk near the supermassive black hole in a luminous quasar.  This
+ package contains the documentation for the code, also known as "Hazy".

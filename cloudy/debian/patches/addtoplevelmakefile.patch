@@ -2,7 +2,7 @@ Author: Roger Wesson <rw@nebulousresearch.org>
 Description: create make file in top level directory, which calls the makefile in the source directory
 --- /dev/null
 +++ b/Makefile
-@@ -0,0 +1,20 @@
+@@ -0,0 +1,18 @@
 +main:
 +	cd source/ && ${MAKE}
 +
@@ -17,8 +17,6 @@ Description: create make file in top level directory, which calls the makefile i
 +	gzip -f ${DESTDIR}/usr/share/man/man1/cloudy.1
 +
 +clean:
-+	rm -f data/cdms+jpl/.gitignore
-+	rm -f data/chianti/mn/mn_8/.meo.swp
 +	cd source && ${MAKE} clean
 +
 +test:
