@@ -3,7 +3,13 @@ Upstream-Name: mocassin
 Source: http://www.3d-mocassin.net
 
 Files: debian/*
-Copyright: 2015 Barbara Ercolano
+Copyright: 2016 Roger Wesson
+License: GPL-3+
+
+Files: *
+Copyright: 1999- Barbara Ercolano
+License: GPL-3+
+
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

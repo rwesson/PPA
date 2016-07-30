@@ -1,7 +1,7 @@
-mocassin (2.02.70.6-2) trusty; urgency=low
+mocassin (2.02.70.7-1ppa1~xenial1) xenial; urgency=low
 
-  * fixed section
-  * added benchmarks directory
-  * added man page
+  * fixed to run with gfortran 5
+  * various usability fixes
+  * efficiency improvements
 
- -- Roger Wesson <rw@nebulousresearch.org>  Sat, 11 Jun 2016 11:04:55 +0000
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 28 Jul 2016 20:35:00 +0100
