@@ -1,0 +1,20 @@
+Source: voro++
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               libc6 (>= 2.14),
+Standards-Version: 3.9.7
+Homepage: http://math.lbl.gov/voro++/
+
+Package: voro++
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for the computation of the Voronoi diagram
+ Voro++ is a software library for carrying out three-dimensional computations
+ of the Voronoi tessellation. A distinguishing feature of the Voro++ library is
+ that it carries out cell-based calculations, computing the Voronoi cell for
+ each particle individually. It is particularly well-suited for applications
+ that rely on cell-based statistics, where features of Voronoi cells (eg.
+ volume, centroid, number of faces) can be used to analyze a system of
+ particles.  
