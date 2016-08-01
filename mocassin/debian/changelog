@@ -1,3 +1,9 @@
+mocassin (2.02.70.8-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * actually fixed to run with gfortran 5; previous fix had deallocate instead of nullify in a few places
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 01 Aug 2016 20:35:23 +0100
+
 mocassin (2.02.70.7-1ppa1~xenial1) xenial; urgency=low
 
   * fixed to run with gfortran 5
