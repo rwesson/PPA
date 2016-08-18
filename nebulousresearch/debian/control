@@ -9,11 +9,13 @@ Standards-Version: 3.9.7
 Package: nebulousresearch
 Architecture: all
 Depends: alfa,
+         bhmie,
          cloudy,
          cloudy-data,
          intrat,
          mocassin,
          neat,
+         nebular,
          voro++
 Multi-Arch: foreign
 Description: Tools for analysis of emission line nebulae
@@ -30,3 +32,5 @@ Description: Tools for analysis of emission line nebulae
  MOCASSIN: Monte Carlo Simulations of Ionised Nebulae (Ercolano et al. 2003)
  .
  NEAT: Nebular Empirical Analysis Tool (Wesson et al. 2012)
+ .
+ VORO++: library for the computation of the Voronoi diagram (Rycroft 2008)
