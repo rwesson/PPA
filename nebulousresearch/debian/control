@@ -1,0 +1,32 @@
+Source: nebulousresearch
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Homepage: https://launchpad.net/~nebulousresearch/+archive/ubuntu/ppa
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.7
+
+Package: nebulousresearch
+Architecture: all
+Depends: alfa,
+         cloudy,
+         cloudy-data,
+         intrat,
+         mocassin,
+         neat,
+         voro++
+Multi-Arch: foreign
+Description: Tools for analysis of emission line nebulae
+ A selection of packages for measuring and analysing emission line objects such 
+ as planetary nebulae and HII regions.  Includes the following:
+ .
+ ALFA: Automated Line Fitting Algorithm (Wesson 2016)
+ .
+ CLOUDY: Photoionization simulations for the discriminating astrophysicist
+ since 1978 (Ferland et al. 2013)
+ .
+ INTRAT: Intensity Ratios of Hydrogenic Ions (Storey & Hummer 1995)
+ .
+ MOCASSIN: Monte Carlo Simulations of Ionised Nebulae (Ercolano et al. 2003)
+ .
+ NEAT: Nebular Empirical Analysis Tool (Wesson et al. 2012)
