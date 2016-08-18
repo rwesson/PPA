@@ -1,4 +1,4 @@
-intrat (1.0-2) xenial; urgency=low
+intrat (1.0-2) trusty; urgency=low
 
   * fixed section
 

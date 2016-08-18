@@ -1,4 +1,4 @@
-alfa (0.99-2ppa1~xenial1) xenial; urgency=low
+alfa (0.99-2ppa1~trusty1) trusty; urgency=low
 
   * Fixed dependency issue
 

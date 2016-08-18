@@ -1,22 +1,22 @@
-mocassin (2.02.71-1ppa1~xenial1) xenial; urgency=medium
+mocassin (2.02.71-1ppa1~trusty1) trusty; urgency=medium
 
   * new upstream release, 2.02.71
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 17 Aug 2016 17:30:31 +0100
 
-mocassin (2.02.70.9-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+mocassin (2.02.70.9-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * replaced all pointers with allocatable arrays to fix memory leaks
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 15 Aug 2016 13:39:03 +0100
 
-mocassin (2.02.70.8-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+mocassin (2.02.70.8-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * actually fixed to run with gfortran 5; previous fix had deallocate instead of nullify in a few places
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 01 Aug 2016 20:35:23 +0100
 
-mocassin (2.02.70.7-1ppa1~xenial1) xenial; urgency=low
+mocassin (2.02.70.7-1ppa1~trusty1) trusty; urgency=low
 
   * fixed to run with gfortran 5
   * various usability fixes
