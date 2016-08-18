@@ -2,38 +2,19 @@ Author: Roger Wesson <rw@nebulousresearch.org>
 Description: allow variables to propagate, add install rule, and rm .exe extension from files
 --- a/source/Makefile
 +++ b/source/Makefile
-@@ -3,12 +3,12 @@
- # you need g++ or pathCC to create the dependencies (set with CXXDEPEND)
- # but after that you can use any compiler you want (set with CXX)
- 
--OPT = -O3 -ftrapping-math -fno-math-errno 
-+OPT = -O3 -ftrapping-math -fno-math-errno
- DEBUGOPT = -finline
- CXX = g++
- # -W is the old name for -Wextra, g++ 3.3 only supports the former
--CXXFLAGS = -ansi ${OPT} -Wall -W -g
--LDFLAGS = ${OPT} -Wall -g
-+CXXFLAGS += -ansi ${OPT} -Wall -W -g
-+LDFLAGS += ${OPT} -Wall -g
- LDLIBS =
+@@ -18,9 +18,10 @@
  NO_TRAP_FLAGS =
  # this is intended for supplying extra command line parameters, e.g. extra -D flags
-@@ -99,11 +99,9 @@
+ EXTRA =
+-SRCDIR = .
++SRCDIR = ./
+ OBJEXT = o
+ LIBEXT = a
++CLOUDY_DATA_PATH=${DESTDIR}/usr/share/cloudy/data
  
- CLDCONFIG = $(PWD)/cloudyconfig.h
+ .PHONY: all default data debug clean distclean debug-test test valgrind-test depend
  
--CDP = ${CLOUDY_DATA_PATH}
--ifeq ($(CDP),)
--# create reasonable default when CLOUDY_DATA_PATH not set...
--  CDP = $(PWD)/${SRCDIR}/../data/
--endif
-+export CLOUDY_DATA_PATH:=$(PWD)/${SRCDIR}/../data/
-+CDP = ${DESTDIR}/usr/share/cloudy/data
-+
- ifneq (${CLOUDY_LAPACK_PATH},)
-   CXXFLAGS += -DLAPACK -I${CLOUDY_LAPACK_PATH}/include
-   LDLIBS += -L${CLOUDY_LAPACK_PATH}/lib -llapack
-@@ -139,7 +137,7 @@
+@@ -147,7 +148,7 @@
  CXXFLAGSNOCFG := ${filter-out ${CFGFILTER},${CXXFLAGS}}
  
  # Makefile.targets can override or add to the DEFAULT variable.
@@ -42,7 +23,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  # include additional targets from file if one exists (or carry on without
  # worrying if it doesn't)
-@@ -149,25 +147,25 @@
+@@ -157,8 +158,8 @@
  
  default: $(DEFAULT)
  
@@ -53,34 +34,54 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  libcloudy.${LIBEXT}: ${libobjects}
  	ar ru libcloudy.${LIBEXT} $^
- 	${RANLIB} libcloudy.${LIBEXT}
- 
- data:
--	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
-+	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) && ${MAKE} clean
+@@ -168,21 +169,21 @@
+ 	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
  
  clean:
- 	rm -f *.${OBJEXT}
- 	rm -f *.d
- 	rm -f *.h.gch
- 	rm -rf SunWS_cache
+-	rm -f *.${OBJEXT}
+-	rm -f *.d
+-	rm -f *.h.gch
+-	rm -rf SunWS_cache
 -	rm -rf cloudy.exe.dSYM
-+	rm -rf cloudy.dSYM
- 	rm -f libcloudy.${LIBEXT}
+-	rm -f libcloudy.${LIBEXT}
++	rm -f ${SRCDIR}/*.${OBJEXT}
++	rm -f ${SRCDIR}/*.d
++	rm -f ${SRCDIR}/*.h.gch
++	rm -rf ${SRCDIR}/SunWS_cache
++	rm -rf ${SRCDIR}/cloudy.dSYM
++	rm -f ${SRCDIR}/libcloudy.${LIBEXT}
  	rm -f $(DEFAULT)
 -	rm -f runtests.exe
-+	rm -f runtests
- 	rm -rf tmp_cloudyconfig.*
+-	rm -rf tmp_cloudyconfig.*
++	rm -f ${SRCDIR}/runtests
++	rm -rf ${SRCDIR}/tmp_cloudyconfig.*
  
  distclean: clean
-@@ -206,13 +204,13 @@
+ 	rm -f cloudyconfig.h
+ 	rm -f ${SRCDIR}/Makefile.conf
+-	rm -rf lib
+-	rm -rf include
++	rm -rf ${SRCDIR}/lib
++	rm -rf ${SRCDIR}/include
+ 	cd ${SRCDIR}/../library/UnitTest++ && $(MAKE) clean
+ 	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) clean
+ 
+@@ -208,19 +209,19 @@
+ 	${CXX} ${CXXFLAGS} -o $@ $<
+ 	${SRCDIR}/make_depend.pl "${DEPCMD} $<" ${@:.h.gch=.o} $@ ${CLDCONFIG} ${@:.gch=.d}
+ 
+-${CLDCONFIG}: ${SRCDIR}/configure.sh
++${CLDCONFIG}: $(SRCDIR)/configure.sh
+ 	@echo "Creating cloudyconfig.h"
+-	@${SRCDIR}/configure.sh ${CXX} ${CXXFLAGSNOCFG} -I${SRCDIR}
++	@$(SRCDIR)/configure.sh ${CXX} ${CXXFLAGSNOCFG} -I${SRCDIR}
  
  debug-test: test
  
 -test: runtests.exe
 -	./runtests.exe
 +test: runtests
-+	./runtests
++	CLOUDY_DATA_PATH=../data ./runtests
  
 -valgrind-test: runtests.exe
 -	valgrind --leak-check=full --track-fds=yes ./runtests.exe
@@ -92,12 +93,9 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  	${CXX} ${CXXFLAGS} -${OBJEXT} $@ ${filter-out %.${LIBEXT}, $^} ${LDFLAGS} -L. -lcloudy -Llib -lUnitTest++ ${LDLIBS}
  
  # the dependency on libUnitTest++.a is needed to make sure header files are in place.
-@@ -245,3 +243,8 @@
+@@ -252,4 +253,4 @@
+ # the way we create dependency files is discussed in http://scottmcpeak.com/autodepend/autodepend.html
  ifneq (${DEP_GOALS},)
  -include ${predepends} ${fulldepends}
- endif
-+
-+install:
-+	test -e ${DESTDIR}/usr/bin || mkdir -p ${DESTDIR}/usr/bin
-+	test -e ${DESTDIR}/usr/share/cloudy || mkdir -p ${DESTDIR}/usr/share/cloudy
-+	install cloudy ${DESTDIR}/usr/bin
+-endif
++endif 

@@ -8,4 +8,4 @@
 	dh $@
 
 override_dh_install:
-	dh_install --exclude=.swp --exclude=.gitignore
+	dh_install --exclude=.swp --exclude=.gitignore --exclude=convert_calpgm

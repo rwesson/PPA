@@ -1,5 +1,5 @@
-cloudy (13.03002-4) trusty; urgency=low
+cloudy (13.04-1ppa1~trusty1) trusty; urgency=low
 
-  * initial package
+  * new upstream version
 
- -- Roger Wesson <rw@nebulousresearch.org>  Tue, 7 Jun 2016 10:40:05 +0000
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 11:39:43 +0100
