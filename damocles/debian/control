@@ -1,0 +1,21 @@
+Source: damocles
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               gfortran,
+               libc6 (>= 2.14),
+               libgfortran3 (>= 4.6),
+               libgomp1 (>= 4.2.1)
+Standards-Version: 3.9.7
+Homepage: https://github.com/rwesson/damocles
+
+Package: damocles
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Dust Affected Models Of Characteristic Line Emission in Supernovae
+ damocles models the effects of dust on the line profiles of core-collapse
+ supernovae in order to determine newly formed dust masses.  The code can treat
+ dust composed of multiple species and grain sizes, with variable ejecta
+ density and velocity distributions.  Both clumped and smooth geometries may be
+ modelled.

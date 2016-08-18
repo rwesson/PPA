@@ -1,0 +1,5 @@
+damocles (1.0-1ppa~xenial1) xenial; urgency=medium
+
+  * Initial package.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 03 Aug 2016 18:37:21 +0100
