@@ -1,3 +1,9 @@
+nebular (1.0-7ppa1~trusty1) trusty; urgency=medium
+
+  * fixed dependency
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 11:37:29 +0100
+
 nebular (1.0-6ppa1~trusty1) trusty; urgency=low
 
   * installed data
