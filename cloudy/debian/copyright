@@ -8,7 +8,7 @@ License: Zlib
 
 Files: docs/*
 Copyright: (C) 1978-2013 Gary J. Ferland and others.
-License: custom
+License: custom-documentation
  Redistribution and use of the documentation (all parts of Hazy and the Quick
  Start Guide) in source (LaTeX) and 'compiled' forms (PDF, PostScript, HTML and
  so forth) with or without modification, are permitted provided that the
@@ -40,7 +40,7 @@ License: LGPL-3
 
 Files: data/chianti/*
 Copyright: CHIANTI consortium, 1997-
-License: custom
+License: custom-chianti
  From http://www.chiantidatabase.org/:
  "The CHIANTI package is freely available. If you use the package, we only ask
  you to appropriately acknowledge CHIANTI"
