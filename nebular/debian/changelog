@@ -1,0 +1,11 @@
+nebular (1.0-6ppa1~xenial1) xenial; urgency=low
+
+  * installed data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 16 Aug 2016 07:34:20 +0100
+
+nebular (1.0-5ppa1~xenial1) xenial; urgency=low
+
+  * Fixed package.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 15 Aug 2016 11:03:47 +0100

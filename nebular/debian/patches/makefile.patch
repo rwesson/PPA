@@ -1,0 +1,27 @@
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -20,9 +20,11 @@
+ UNAME := $(shell uname -s)
+ ifeq ($(UNAME), Linux)
+ 	platform = $(UNAME)
++	PREFIX=/usr
+ else
+ ifeq ($(UNAME), Darwin)
+ 	platform = $(UNAME)
++	PREFIX=/usr/local
+ endif
+ endif
+ 
+@@ -77,3 +79,12 @@
+ 
+ clean :
+ 	rm -f nebular *.o
++
++install:
++	test -e $(DESTDIR)$(PREFIX)/share/nebular || mkdir -p $(DESTDIR)$(PREFIX)/share/nebular
++	install nebular $(DESTDIR)$(PREFIX)/bin
++	cp -r ../data/ $(DESTDIR)$(PREFIX)/share/nebular/
++
++uninstall:
++	rm -f $(DESTDIR)$(PREFIX)/bin/nebular
++	rm -rf $(DESTDIR)$(PREFIX)/share/nebular/

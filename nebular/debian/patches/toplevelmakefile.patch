@@ -1,0 +1,25 @@
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,22 @@
++PREFIX=/usr
++MANDIR=${DESTDIR}${PREFIX}/share/man/man1
++
++nebular:
++	cd src/ && make
++
++clean:
++	cd src/ && make clean
++
++install:
++	test -e ${DESTDIR}${PREFIX}/bin || mkdir -p ${DESTDIR}${PREFIX}/bin
++	test -e ${DESTDIR}${PREFIX}/share/nebular || mkdir -p ${DESTDIR}${PREFIX}/share/nebular
++	test -e ${MANDIR} || mkdir -p ${MANDIR}
++	install src/nebular ${DESTDIR}${PREFIX}/bin/
++	install man/nebular.1 ${MANDIR}
++	gzip ${MANDIR}/nebular.1
++	cp data/* ${DESTDIR}${PREFIX}/share/nebular/
++
++uninstall:
++	rm -f ${DESTDIR}${PREFIX}/bin/nebular
++	rm -f ${DESTDIR}${PREFIX}/share/nebular
++	rm -f ${MANDIR}/nebular.1.gz

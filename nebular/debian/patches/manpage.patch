@@ -1,0 +1,54 @@
+--- /dev/null
++++ b/man/nebular.1
+@@ -0,0 +1,51 @@
++.\" Manpage for nebular.
++.TH man 1 "11 Aug 2016" "1.0" "nebular man page"
++
++.SH NAME
++\fBNEBULAR\fR \- simple synthesis code for hydrogen and helium spectra
++
++.SH SYNOPSIS
++\fBnebular\fR -r [wavelength range]/-i [input file] -t [temperature] -n [density] [options]
++
++.SH DESCRIPTION
++Calculates the nebular spectrum for a mixed hydrogen helium gas in ionization equilibrium, including bound-free, free-free, two-photon and line emission.  Calculations are done for a user-specified wavelength / frequency range including step size, or on a pre-defined grid.  The input can be in wavelengths (Angstrom) or in frequencies (Hz).  Wavelengths are assumed if numeric values for the range/grid are <1e7.  The output spectrum will be scaled in F_lambda or F_nu, depending on whether wavelengths or frequencies are given.
++
++.SH OPTIONS (mandatory):
++.TP
++.B -r range_min range_max range_delta
++ (Angstrom or Hz)
++ --OR--
++.TP
++.B -i input
++ wavelength/frequency table (ASCII)
++.TP
++.B -t
++ electron temperature
++.TP
++.B -n
++ electron density
++
++.SH OPTIONS (optional):
++.TP
++.B -f
++ H+ He+ He++ ionization fractions (0...1); calculated internally if omitted
++.TP
++.B -o [filename]
++ output file name (default: 'nebular_spectrum.dat')
++.TP
++.B -a
++ Helium abundance ratio by parts (default: 0.10)
++.TP
++.B -c A or B
++ Case A or Case B for the emission lines; default: B
++.TP
++.B -w FWHM
++ Convolve total spectrum with a Gaussian of this FWHM [Angstrom or Hz]
++.TP
++.B -b
++ Suppress header line in output file
++
++.SH BUGS
++No known bugs.
++.SH AUTHOR
++Mischa Schirmer

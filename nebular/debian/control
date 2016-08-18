@@ -1,0 +1,25 @@
+Source: nebular
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               libgsl-dev
+Standards-Version: 3.9.7
+Homepage: https://github.com/mischaschirmer/nebular
+
+Package: nebular
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Simple synthesis code for hydrogen and helium spectra
+ NEBULAR synthesizes an accurate spectrum of an ideal, mixed hydrogen and helium
+ gas in ionization equilibrium, over a useful range of densities, temperatures
+ and wavelengths. Free-free, free-bound and two-photon continua are included as
+ well as parts of the HI, HeI and HeII line series. NEBULAR interpolates over
+ publicly available data tables; it can be used to easily extract information
+ from these (complex) tables without prior knowledge about their data structure.
+ The resulting spectra can be used to e.g. determine equivalent line widths,
+ constrain the contribution of the nebular continuum to a bandpass, and for
+ educational purposes. NEBULAR can resample the spectrum on a user-defined
+ wavelength grid for direct comparison with an observed spectrum; however, it
+ can not be used to fit an observed spectrum.
+
