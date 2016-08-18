@@ -1,3 +1,9 @@
+nebular (1.0-7ppa1~xenial1ubuntu1) xenial; urgency=low
+
+  * dependency fix
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 10:43:47 +0100
+
 nebular (1.0-6ppa1~xenial1) xenial; urgency=low
 
   * installed data
