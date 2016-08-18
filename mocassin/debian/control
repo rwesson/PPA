@@ -12,7 +12,37 @@ Homepage: http://www.3d-mocassin.net
 
 Package: mocassin
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}, mocassin-data
+Suggests: mocassin-benchmarks, mocassin-examples
 Description: MOnte CArlo SimulationS of Ionised Nebulae
  Fully 3D radiative transfer of gas and dust in arbitrary geometries, with
  single, multiple, planar or diffuse ionising sources
+
+Package: mocassin-data
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: mocassin, mocassin-benchmarks, mocassin-examples
+Description: atomic and optical data for the photoionisation code MOCASSIN
+ MOCASSIN carries out fully 3D radiative transfer of gas and dust in arbitrary
+ geometries, with single, multiple, planar or diffuse ionising sources.  This
+ package contains the atomic and optical data necessary to run simulations.
+
+Package: mocassin-benchmarks
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: mocassin
+Description: benchmarks for the photoionisation code MOCASSIN
+ MOCASSIN carries out fully 3D radiative transfer of gas and dust in arbitrary
+ geometries, with single, multiple, planar or diffuse ionising sources.  This
+ package contains benchmark problems which can be run and compared with the
+ outputs of other photoionisation codes.
+
+Package: mocassin-examples
+Architecture: all
+Depends: ${misc:Depends}
+Suggests: mocassin
+Description: Examples for the photoionisation code MOCASSIN
+ MOCASSIN carries out fully 3D radiative transfer of gas and dust in arbitrary
+ geometries, with single, multiple, planar or diffuse ionising sources.  This
+ package contains example input for files for some of the complex simulations
+ that MOCASSIN is capable of.
