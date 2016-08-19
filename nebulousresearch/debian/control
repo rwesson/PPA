@@ -36,4 +36,6 @@ Description: Tools for analysis of emission line nebulae
  .
  NEAT: Nebular Empirical Analysis Tool (Wesson et al. 2012)
  .
+ NEBULAR: Synthesis of hydrogen and helium spectra (Schirmer 2016)
+ .
  VORO++: library for the computation of the Voronoi diagram (Rycroft 2008)
