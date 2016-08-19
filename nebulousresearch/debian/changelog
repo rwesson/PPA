@@ -1,4 +1,4 @@
-nebulousresearch (1.0-4ppa1~yakkety1ubuntu1) trusty; urgency=medium
+nebulousresearch (1.0-4ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * added bhmie, nebular and mocassin benchmarks and examples
 
