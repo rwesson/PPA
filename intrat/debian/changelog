@@ -1,5 +1,5 @@
-intrat (1.0-3ppa1~trusty1) trusty; urgency=low
+intrat (1.0-1ppa1~trusty1) trusty; urgency=low
 
   * fixed section
 
- -- Roger Wesson <rw@nebulousresearch.org>  Sat, 11 Jun 2016 10:52:45 +0000
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 Aug 2016 04:56:45 +0000
