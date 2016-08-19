@@ -1,4 +1,4 @@
-nebulousresearch (1.0-4ppa1~yakkety1ubuntu1) xenial; urgency=medium
+nebulousresearch (1.0-4ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * added bhmie, nebular and mocassin benchmarks and examples
 
