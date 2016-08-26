@@ -1,3 +1,9 @@
+alfa (1.0-1ppa1~yakkety1) yakkety; urgency=medium
+
+  * New upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:37:11 +0100
+
 alfa (0.99-2ppa1~yakkety1) yakkety; urgency=low
 
   * Fixed dependency issue
