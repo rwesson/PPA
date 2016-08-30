@@ -1,3 +1,7 @@
-*
+!*/
 */*
-!*/debian
+!*/debian/
+*.xz
+*.changes
+*.gz
+*.deb
