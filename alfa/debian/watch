@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/ALFA-$1\.tar\.gz/ \
+  https://github.com/rwesson/ALFA/tags .*/v?(\d\S*)\.tar\.gz
