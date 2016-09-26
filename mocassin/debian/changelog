@@ -1,3 +1,9 @@
+mocassin (2.02.72-1ppa1~xenial1) xenial; urgency=medium
+
+  * new upstream release, 2.02.72
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 26 Sep 2016 10:31:21 +0100
+
 mocassin (2.02.71-1ppa1~xenial1) xenial; urgency=medium
 
   * new upstream release, 2.02.71
