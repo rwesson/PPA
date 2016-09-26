@@ -1,3 +1,9 @@
+mocassin (2.02.72-1ppa1~trusty1) trusty; urgency=medium
+
+  * new upstream release, 2.02.72
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 26 Sep 2016 10:08:31 +0100
+
 mocassin (2.02.71-1ppa1~trusty1) trusty; urgency=medium
 
   * new upstream release, 2.02.71
