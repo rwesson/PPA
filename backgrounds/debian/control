@@ -1,0 +1,16 @@
+Source: nebulousresearch-backgrounds
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0)
+Standards-Version: 3.9.8
+Homepage: https://www.nebulousresearch.org/
+
+Package: nebulousresearch-backgrounds
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Astrophotography backgrounds by Roger Wesson
+ A selection of high resolution desktop backgrounds, taken at the Very Large
+ Telescope and other sites of the  European Southern Observatory in Chile.
+ They were taken by Roger Wesson, an ESO Photo Ambassador.  For many more ESO 
+ images, go to  http://www.eso.org/public/images
