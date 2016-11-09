@@ -1,4 +1,4 @@
-alfa (1.0-2ppa1~trusty1) trusty; urgency=medium
+alfa (1.0-3ppa1~trusty1) trusty; urgency=medium
 
   * simplified build dependencies
 
