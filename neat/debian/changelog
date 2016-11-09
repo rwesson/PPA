@@ -1,4 +1,4 @@
-neat (2.0-1ppa1~trusty1) trusty; urgency=medium
+neat (2.00-1ppa1~trusty1) trusty; urgency=medium
 
   * updated build dependencies, standards version
 
