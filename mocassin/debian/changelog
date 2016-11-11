@@ -1,3 +1,9 @@
+mocassin (2.02.72-2ppa1~trusty1) trusty; urgency=medium
+
+  * simplified build dependencies
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 09 Nov 2016 18:29:02 +0000
+
 mocassin (2.02.72-1ppa1~trusty1) trusty; urgency=medium
 
   * new upstream release, 2.02.72
