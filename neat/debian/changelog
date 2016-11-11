@@ -1,4 +1,10 @@
-neat (2.00-2ppa1~xenial1) xenial; urgency=medium
+neat (2.00-3ppa1~xenial1) xenial; urgency=medium
+
+  * patched to make build reproducible
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 11 Nov 2016 11:38:46 +0000
+
+neat (2.00-1ppa1~xenial1) xenial; urgency=medium
 
   * updated build dependencies, standards version
 
