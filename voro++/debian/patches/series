@@ -1,2 +1,4 @@
 Makefile.patch
 config.mk.patch
+man.patch
+cmd_line.cc.patch
