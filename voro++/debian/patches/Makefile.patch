@@ -1,3 +1,5 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: supports DESTDIR
 --- a/Makefile
 +++ b/Makefile
 @@ -26,47 +26,47 @@
