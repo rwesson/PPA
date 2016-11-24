@@ -1,3 +1,5 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: allows propagation of flags, and sets prefix to /usr
 --- a/config.mk
 +++ b/config.mk
 @@ -11,14 +11,14 @@
@@ -5,7 +7,7 @@
  
  # Flags for the C++ compiler
 -CFLAGS=-Wall -ansi -pedantic -O3
-+CFLAGS += -Wall -ansi -pedantic -O3
++CFLAGS += -Wall -ansi -pedantic -O3 $(CPPFLAGS)
  
  # Relative include and library paths for compilation of the examples
  E_INC=-I../../src
