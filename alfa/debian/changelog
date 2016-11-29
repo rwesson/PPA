@@ -1,3 +1,9 @@
+alfa (1.0-3ppa1~yakkety1) yakkety; urgency=medium
+
+  * patched to remove debugging comments displayed when reading 1D FITS files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 29 Nov 2016 15:35:54 +0000
+
 alfa (1.0-2ppa1~yakkety1) yakkety; urgency=medium
 
   * simplified build dependencies
