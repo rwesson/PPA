@@ -1,4 +1,4 @@
-alfa (1.0-3ppa1~trusty1) trusty; urgency=medium
+alfa (1.0-4ppa1~trusty1) trusty; urgency=medium
 
   * patched to remove debugging comments displayed when reading 1D FITS files
 
