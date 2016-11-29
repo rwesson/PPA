@@ -1,5 +1,11 @@
 alfa (1.0-3ppa1~trusty1) trusty; urgency=medium
 
+  * patched to remove debugging comments displayed when reading 1D FITS files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 29 Nov 2016 15:35:54 +0000
+
+alfa (1.0-2ppa1~trusty1) trusty; urgency=medium
+
   * simplified build dependencies
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 09 Nov 2016 14:00:17 +0000
@@ -8,7 +14,7 @@ alfa (1.0-1ppa1~trusty1) trusty; urgency=medium
 
   * New upstream version
 
- -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:36:12 +0100
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:37:11 +0100
 
 alfa (0.99-2ppa1~trusty1) trusty; urgency=low
 
