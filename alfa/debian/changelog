@@ -1,3 +1,9 @@
+alfa (1.0-3ppa1~xenial1) xenial; urgency=medium
+
+  * patched to remove debugging comments displayed when reading 1D FITS files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 29 Nov 2016 15:35:54 +0000
+
 alfa (1.0-2ppa1~xenial1) xenial; urgency=medium
 
   * simplified build dependencies
@@ -8,7 +14,7 @@ alfa (1.0-1ppa1~xenial1) xenial; urgency=medium
 
   * New upstream version
 
- -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:36:47 +0100
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:37:11 +0100
 
 alfa (0.99-2ppa1~xenial1) xenial; urgency=low
 
