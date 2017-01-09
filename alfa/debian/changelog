@@ -1,3 +1,9 @@
+alfa (1.0.1-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
+
+  * fixed file reading and changed file naming format to allow very large FITS files to be fitted without format overflow
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 09 Jan 2017 20:41:35 +0000
+
 alfa (1.0-3ppa1~yakkety1) yakkety; urgency=medium
 
   * patched to remove debugging comments displayed when reading 1D FITS files
