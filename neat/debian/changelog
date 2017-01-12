@@ -1,3 +1,9 @@
+neat (2.0.55-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * set PREFIX depending on OS
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 14:20:48 +0000
+
 neat (2.00-2ppa1~trusty1) trusty; urgency=medium
 
   * patched to make build reproducible
