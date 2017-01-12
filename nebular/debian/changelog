@@ -1,3 +1,9 @@
+nebular (1.2-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * New upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 13:58:45 +0000
+
 nebular (1.0-7ppa1~zesty1ubuntu1) zesty; urgency=low
 
   * dependency fix
