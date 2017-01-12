@@ -1,22 +1,22 @@
-nebulousresearch (1.0-4ppa1~xenial1ubuntu1) xenial; urgency=medium
+nebulousresearch (1.0-4ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * added bhmie, nebular and mocassin benchmarks and examples
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 Aug 2016 05:55:21 +0100
 
-nebulousresearch (1.0-3ppa1~xenial1ubuntu2) xenial; urgency=medium
+nebulousresearch (1.0-3ppa1~zesty1ubuntu2) zesty; urgency=medium
 
   * added voro++
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 02 Aug 2016 09:09:17 +0100
 
-nebulousresearch (1.0-2ppa1~xenial1ubuntu1) xenial; urgency=medium
+nebulousresearch (1.0-2ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * added cloudy-data to dependency so that it gets uninstalled
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 30 Jul 2016 09:21:37 +0100
 
-nebulousresearch (1.0) xenial; urgency=low
+nebulousresearch (1.0) zesty; urgency=low
 
   * First version
 

@@ -1,16 +1,16 @@
-nebular (1.0-7ppa1~xenial1ubuntu1) xenial; urgency=low
+nebular (1.0-7ppa1~zesty1ubuntu1) zesty; urgency=low
 
   * dependency fix
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 10:43:47 +0100
 
-nebular (1.0-6ppa1~xenial1) xenial; urgency=low
+nebular (1.0-6ppa1~zesty1) zesty; urgency=low
 
   * installed data
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 16 Aug 2016 07:34:20 +0100
 
-nebular (1.0-5ppa1~xenial1) xenial; urgency=low
+nebular (1.0-5ppa1~zesty1) zesty; urgency=low
 
   * Fixed package.
 
