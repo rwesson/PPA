@@ -2,7 +2,8 @@ Source: voro++
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 9.0.0)
+Uploaders: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0), dh-exec
 Standards-Version: 3.9.8
 Homepage: http://math.lbl.gov/voro++/
 
@@ -54,6 +55,7 @@ Description: library for the computation of the Voronoi diagram (shared library)
 Package: voro++-examples
 Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: voro++, voro++-dev, libvoro++1
 Description: library for the computation of the Voronoi diagram (examples)
  Voro++ is a software library for carrying out three-dimensional computations
  of the Voronoi tessellation. A distinguishing feature of the Voro++ library is

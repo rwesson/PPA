@@ -8,4 +8,7 @@
 	dh $@
 
 override_dh_installchangelogs:
-	dh_installchangelogs NEWS 
+	dh_installchangelogs NEWS
+
+override_dh_install:
+	dh_install
