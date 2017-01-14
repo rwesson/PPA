@@ -10,5 +10,5 @@
 override_dh_installchangelogs:
 	dh_installchangelogs NEWS
 
-override_dh_installexamples:
-	dh_installexamples examples/*
+override_dh_install:
+	dh_install
