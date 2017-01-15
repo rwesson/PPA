@@ -54,8 +54,8 @@ Description: library for the computation of the Voronoi diagram (shared library)
 
 Package: voro++-examples
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Suggests: voro++, voro++-dev, libvoro++1
+Depends: voro++-dev, ${misc:Depends}, ${shlibs:Depends}
+Suggests: voro++
 Description: library for the computation of the Voronoi diagram (examples)
  Voro++ is a software library for carrying out three-dimensional computations
  of the Voronoi tessellation. A distinguishing feature of the Voro++ library is
