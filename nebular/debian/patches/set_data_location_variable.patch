@@ -1,0 +1,12 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: Set environment variable for data location
+--- a/src/nebular.cc
++++ b/src/nebular.cc
+@@ -94,6 +94,7 @@
+   char input_grid[1000], output_file[1000];
+   strcpy(output_file, "nebular_spectrum.dat");
+   strcpy(input_grid, "still_unspecified");
++  setenv("NEBULARDIR","/usr/share/nebular",1);
+ 
+   // print usage if no arguments were given
+   if (argc == 1) usage();
