@@ -1,3 +1,9 @@
+nebular (1.2-2ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * patched to avoid user needing to set environment variable
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 16 Jan 2017 12:10:41 +0000
+
 nebular (1.2-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * New upstream version
