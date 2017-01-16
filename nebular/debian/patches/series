@@ -1,2 +1,3 @@
+set_data_location_variable.patch
 toplevelmakefile.patch
 manpage.patch
