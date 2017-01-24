@@ -1,3 +1,12 @@
+alfa (1.0.43-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
+
+  * improved file handling
+  * extended sky line catalogue to 2.25um
+  * user can specify wavelength scaling
+  * made Balmer line wavelengths consistent in all line catalogues, ultradeep previously differed
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 Jan 2017 18:58:01 +0000
+
 alfa (1.0.35-1ppa1~yakkety1ubuntu2) yakkety; urgency=medium
 
   * more verbose file reading information
