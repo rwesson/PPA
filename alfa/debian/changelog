@@ -1,3 +1,9 @@
+alfa (1.0.45-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * wrong values of velocity and resolution were used as initial guesses in fits of 2D and 3D data, sometimes resulting in bad fits, and a parallelisation bug meant that sometimes a pixel was re-fitted or not fitted when the opposite should have been the case.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 26 Jan 2017 19:45:21 +0000
+
 alfa (1.0.43-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * improved file handling
