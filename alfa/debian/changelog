@@ -1,3 +1,9 @@
+alfa (1.0.47-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * Fixed bug introduced in 1.0.45 which prevented 1D files from being fitted
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 27 Jan 2017 11:58:11 +0000
+
 alfa (1.0.45-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * wrong values of velocity and resolution were used as initial guesses in fits of 2D and 3D data, sometimes resulting in bad fits, and a parallelisation bug meant that sometimes a pixel was re-fitted or not fitted when the opposite should have been the case.
