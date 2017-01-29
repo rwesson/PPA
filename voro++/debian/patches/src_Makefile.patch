@@ -1,0 +1,35 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: patch for src/Makefile to compile shared library
+--- a/src/Makefile
++++ b/src/Makefile
+@@ -13,7 +13,7 @@
+ src=$(patsubst %.o,%.cc,$(objs))
+ 
+ # Makefile rules
+-all: libvoro++.a voro++
++all: libvoro++.a voro++ libvoro++.so.1.0.0
+ 
+ depend:
+ 	$(CXX) -MM $(src) >Makefile.dep
+@@ -25,7 +25,12 @@
+ 	ar rs libvoro++.a $^
+ 
+ voro++: libvoro++.a cmd_line.cc
+-	$(CXX) $(CFLAGS) -L. -o voro++ cmd_line.cc -lvoro++
++	$(CXX) $(CFLAGS) $(LDFLAGS) -L. -o voro++ cmd_line.cc -lvoro++
++
++libvoro++.so.1.0.0: $(objs)
++	$(CXX) $(CFLAGS) $(LDFLAGS) -shared -Wl,-soname,libvoro++.so.1,-z,relro -o libvoro++.so.1.0.0 -lc $(objs)
++	ln -s libvoro++.so.1.0.0 libvoro++.so.1
++	ln -s libvoro++.so.1.0.0 libvoro++.so
+ 
+ %.o: %.cc
+ 	$(CXX) $(CFLAGS) -c $<
+@@ -34,6 +39,6 @@
+ 	doxygen Doxyfile
+ 
+ clean:
+-	rm -f $(objs) voro++ libvoro++.a
++	rm -f $(objs) voro++ libvoro++.a libvoro++.so libvoro++.so.*
+ 
+ .PHONY: all help execs depend
