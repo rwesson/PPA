@@ -1,8 +1,16 @@
 Author: Roger Wesson <rw@nebulousresearch.org>
-Description: supports DESTDIR
+Description: supports DESTDIR, removes compilation of examples
 --- a/Makefile
 +++ b/Makefile
-@@ -26,47 +26,47 @@
+@@ -12,7 +12,6 @@
+ # Build all of the executable files
+ all:
+ 	$(MAKE) -C src
+-	$(MAKE) -C examples
+ 
+ # Build the help files (with Doxygen)
+ help:
+@@ -26,47 +25,54 @@
  # Install the executable, man page, and shared library
  install:
  	$(MAKE) -C src
@@ -33,11 +41,16 @@ Description: supports DESTDIR
 +	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/lib
 +	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/share/man
 +	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/share/man/man1
++	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/share/doc/
++	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/share/doc/voro++
 +	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/include
 +	$(INSTALL) -d $(IFLAGS_EXEC) $(DESTDIR)$(PREFIX)/include/voro++
 +	$(INSTALL) $(IFLAGS_EXEC) src/voro++ $(DESTDIR)$(PREFIX)/bin
 +	$(INSTALL) $(IFLAGS) man/voro++.1 $(DESTDIR)$(PREFIX)/share/man/man1
 +	$(INSTALL) $(IFLAGS) src/libvoro++.a $(DESTDIR)$(PREFIX)/lib
++	$(INSTALL) $(IFLAGS) src/libvoro++.so $(DESTDIR)$(PREFIX)/lib
++	$(INSTALL) $(IFLAGS) src/libvoro++.so.1 $(DESTDIR)$(PREFIX)/lib
++	$(INSTALL) $(IFLAGS) src/libvoro++.so.1.0.0 $(DESTDIR)$(PREFIX)/lib
 +	$(INSTALL) $(IFLAGS) src/voro++.hh $(DESTDIR)$(PREFIX)/include/voro++
 +	$(INSTALL) $(IFLAGS) src/c_loops.hh $(DESTDIR)$(PREFIX)/include/voro++
 +	$(INSTALL) $(IFLAGS) src/cell.hh $(DESTDIR)$(PREFIX)/include/voro++
@@ -52,6 +65,7 @@ Description: supports DESTDIR
 +	$(INSTALL) $(IFLAGS) src/v_compute.hh $(DESTDIR)$(PREFIX)/include/voro++
 +	$(INSTALL) $(IFLAGS) src/wall.hh $(DESTDIR)$(PREFIX)/include/voro++
 +	$(INSTALL) $(IFLAGS) src/worklist.hh $(DESTDIR)$(PREFIX)/include/voro++
++	cp -a examples/ $(DESTDIR)$(PREFIX)/share/doc/voro++/
  
  # Uninstall the executable, man page, and shared library
  uninstall:
@@ -75,7 +89,7 @@ Description: supports DESTDIR
 -	rmdir $(PREFIX)/include/voro++
 +	rm -f $(DESTDIR)$(PREFIX)/bin/voro++
 +	rm -f $(DESTDIR)$(PREFIX)/share/man/man1/voro++.1
-+	rm -f $(DESTDIR)$(PREFIX)/lib/libvoro++.a
++	rm -f $(DESTDIR)$(PREFIX)/lib/libvoro++.*
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/voro++.hh
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/c_loops.hh
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/cell.hh
@@ -90,4 +104,5 @@ Description: supports DESTDIR
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/v_compute.hh
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/wall.hh
 +	rm -f $(DESTDIR)$(PREFIX)/include/voro++/worklist.hh
++	rm -f $(DESTDIR)$(PREFIX)/share/doc/voro++/
 +	rmdir $(DESTDIR)$(PREFIX)/include/voro++

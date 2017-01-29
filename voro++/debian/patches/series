@@ -2,3 +2,5 @@ Makefile.patch
 config.mk.patch
 man.patch
 cmd_line.cc.patch
+src_Makefile.patch
+examples_Makefile.patch
