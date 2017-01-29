@@ -1,3 +1,9 @@
+voro++ (0.4.6-7ppa1~xenial1ubuntu2) xenial; urgency=medium
+
+  * used pkg-kde-tools
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sun, 29 Jan 2017 11:49:47 +0000
+
 voro++ (0.4.6-1ppa1~xenial1ubuntu7) xenial; urgency=medium
 
   * fixed propagation of variables

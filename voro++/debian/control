@@ -3,7 +3,7 @@ Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Uploaders: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 9.0.0), dh-exec
+Build-Depends: debhelper (>= 9.0.0), dh-exec, pkg-kde-tools
 Standards-Version: 3.9.8
 Homepage: http://math.lbl.gov/voro++/
 

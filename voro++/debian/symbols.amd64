@@ -43,7 +43,7 @@ libvoro++.so.1 libvoro++1 #MINVER#
  _ZN4voro12voro_computeINS_18container_periodicEE11edge_z_testINS_11voronoicellEEEbRT_dddddd@Base 0.4.6
  _ZN4voro12voro_computeINS_18container_periodicEE11edge_z_testINS_20voronoicell_neighborEEEbRT_dddddd@Base 0.4.6
  _ZN4voro12voro_computeINS_18container_periodicEE11face_x_testINS_11voronoicellEEEbRT_ddddd@Base 0.4.6
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu3# _ZN4voro12voro_computeINS_18container_periodicEE11face_y_testINS_11voronoicellEEEbRT_ddddd@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro12voro_computeINS_18container_periodicEE11face_y_testINS_11voronoicellEEEbRT_ddddd@Base 0.4.6
  _ZN4voro12voro_computeINS_18container_periodicEE11face_z_testINS_11voronoicellEEEbRT_ddddd@Base 0.4.6
  _ZN4voro12voro_computeINS_18container_periodicEE12compute_cellINS_11voronoicellEEEbRT_iiiii@Base 0.4.6
  _ZN4voro12voro_computeINS_18container_periodicEE12compute_cellINS_20voronoicell_neighborEEEbRT_iiiii@Base 0.4.6
@@ -124,7 +124,7 @@ libvoro++.so.1 libvoro++1 #MINVER#
  _ZN4voro14container_polyC2Eddddddiiibbbi@Base 0.4.6
  _ZN4voro14particle_order19add_ordering_memoryEv@Base 0.4.6
  _ZN4voro16voro_fatal_errorEPKci@Base 0.4.6
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro16voronoicell_base10add_memoryINS_11voronoicellEEEvRT_iPi@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro16voronoicell_base10add_memoryINS_11voronoicellEEEvRT_iPi@Base 0.4.6
  _ZN4voro16voronoicell_base10add_memoryINS_20voronoicell_neighborEEEvRT_iPi@Base 0.4.6
  _ZN4voro16voronoicell_base10face_areasERSt6vectorIdSaIdEE@Base 0.4.6
  _ZN4voro16voronoicell_base11face_ordersERSt6vectorIiSaIiEE@Base 0.4.6
@@ -139,8 +139,8 @@ libvoro++.so.1 libvoro++1 #MINVER#
  _ZN4voro16voronoicell_base14add_memory_ds2ERPi@Base 0.4.6
  _ZN4voro16voronoicell_base14check_marginalEiRd@Base 0.4.6
  _ZN4voro16voronoicell_base15check_relationsEv@Base 0.4.6
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro16voronoicell_base15collapse_order1INS_20voronoicell_neighborEEEbRT_@Base 0.4.6-1ppa1~yakkety1ubuntu1
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro16voronoicell_base15collapse_order2INS_11voronoicellEEEbRT_@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro16voronoicell_base15collapse_order1INS_20voronoicell_neighborEEEbRT_@Base 0.4.6
+ _ZN4voro16voronoicell_base15collapse_order2INS_11voronoicellEEEbRT_@Base 0.4.6
  _ZN4voro16voronoicell_base15collapse_order2INS_20voronoicell_neighborEEEbRT_@Base 0.4.6
  _ZN4voro16voronoicell_base15face_freq_tableERSt6vectorIiSaIiEE@Base 0.4.6
  _ZN4voro16voronoicell_base15face_perimetersERSt6vectorIdSaIdEE@Base 0.4.6
@@ -151,10 +151,9 @@ libvoro++.so.1 libvoro++1 #MINVER#
  _ZN4voro16voronoicell_base16check_duplicatesEv@Base 0.4.6
  _ZN4voro16voronoicell_base16output_neighborsEP8_IO_FILE@Base 0.4.6
  _ZN4voro16voronoicell_base16plane_intersectsEdddd@Base 0.4.6
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro16voronoicell_base17add_memory_vorderINS_11voronoicellEEEvRT_@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro16voronoicell_base17add_memory_vorderINS_11voronoicellEEEvRT_@Base 0.4.6
  _ZN4voro16voronoicell_base17add_memory_vorderINS_20voronoicell_neighborEEEvRT_@Base 0.4.6
- _ZN4voro16voronoicell_base17delete_connectionINS_11voronoicellEEEbRT_iib@Base 0.4.6-1ppa1~yakkety1ubuntu2
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro16voronoicell_base17delete_connectionINS_20voronoicell_neighborEEEbRT_iib@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro16voronoicell_base17delete_connectionINS_20voronoicell_neighborEEEbRT_iib@Base 0.4.6
  _ZN4voro16voronoicell_base18max_radius_squaredEv@Base 0.4.6
  _ZN4voro16voronoicell_base19add_memory_verticesINS_11voronoicellEEEvRT_@Base 0.4.6
  _ZN4voro16voronoicell_base19add_memory_verticesINS_20voronoicell_neighborEEEvRT_@Base 0.4.6
@@ -224,7 +223,7 @@ libvoro++.so.1 libvoro++1 #MINVER#
  _ZN4voro20voronoicell_neighboraSERNS_11voronoicellE@Base 0.4.6
  _ZN4voro20voronoicell_neighboraSERS0_@Base 0.4.6
  _ZN4voro23container_periodic_base12region_countEv@Base 0.4.6
-#MISSING: 0.4.6-1ppa1~yakkety1ubuntu2# _ZN4voro23container_periodic_base12region_indexEiiiiiiRdS1_S1_Ri@Base 0.4.6-1ppa1~yakkety1ubuntu1
+ _ZN4voro23container_periodic_base12region_indexEiiiiiiRdS1_S1_Ri@Base 0.4.6
  _ZN4voro23container_periodic_base16put_locate_blockERiRdS2_S2_@Base 0.4.6
  _ZN4voro23container_periodic_base16put_locate_blockERiRdS2_S2_S1_S1_S1_@Base 0.4.6
  _ZN4voro23container_periodic_base17create_all_imagesEv@Base 0.4.6
