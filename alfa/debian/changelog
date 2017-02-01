@@ -1,3 +1,9 @@
+alfa (1.0.48-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * Fixed file reading, image sections now accepted
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 Feb 2017 15:09:01 +0000
+
 alfa (1.0.47-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * Fixed bug introduced in 1.0.45 which prevented 1D files from being fitted
