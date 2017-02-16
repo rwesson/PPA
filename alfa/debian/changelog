@@ -1,3 +1,10 @@
+alfa (1.0.55-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * fit file header row commented out, more convenient in gnuplot
+  * line lists now contain peak and FWHM
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 16 Feb 2017 19:09:22 +0000
+
 alfa (1.0.53-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * added option to fit sum of all rows/pixels for >1D files, and to specify lines to exclude from the fit
