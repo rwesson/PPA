@@ -2,6 +2,8 @@ alfa (1.0.65-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
 
   * various minor fixes for strict compilers
 
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 28 Feb 2017 21:56:58 +0000
+
 alfa (1.0.55-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
 
   * fit file header row commented out, more convenient in gnuplot
