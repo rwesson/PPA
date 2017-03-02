@@ -1,3 +1,9 @@
+neat (2.0.56-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * Fixed bug which meant that uncertainties of lognormal distributions were wrongly reported
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Mar 2017 16:43:21 +0000
+
 neat (2.0.55-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * set PREFIX depending on OS
