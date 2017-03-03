@@ -1,3 +1,9 @@
+damocles (2.0-1ppa~zesty1ubuntu1) zesty; urgency=medium
+
+  * v2.0
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Mar 2017 21:26:44 +0000
+
 damocles (1.0-1ppa~zesty1) zesty; urgency=medium
 
   * Initial package.
