@@ -1,6 +1,14 @@
+alfa (1.0.66-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * implemented option to vary detection limit from 3sigma
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 03 Mar 2017 16:01:06 +0000
+
 alfa (1.0.65-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * various minor fixes for strict compilers
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 28 Feb 2017 21:56:58 +0000
 
 alfa (1.0.55-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
