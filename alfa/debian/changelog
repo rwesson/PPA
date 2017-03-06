@@ -1,3 +1,9 @@
+alfa (1.0.67-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * --collapse now includes only valid pixels as defined by --bad-data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 06 Mar 2017 11:51:32 +0000
+
 alfa (1.0.66-1ppa1~zesty1ubuntu2) zesty; urgency=medium
 
   * implemented option to vary detection limit from 3sigma
