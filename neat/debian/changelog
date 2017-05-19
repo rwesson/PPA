@@ -1,3 +1,11 @@
+neat (2.0.64-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * bugfix, Equation 29 from DI14 for Cl/H was wrong
+  * excluded densities below lower limit from averaging for Balmer and Paschen dec densities
+  * improved formatting of tables
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 May 2017 12:50:43 +0100
+
 neat (2.0.56-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * Fixed bug which meant that uncertainties of lognormal distributions were wrongly reported
