@@ -1,3 +1,11 @@
+neat (2.0.72-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * added Cl+ and Cl3+ abundances to calculations
+  * improved formatting, figures rounded to 3sf, better checking for close to equal uncertainties
+  * added some missing line transition data, fixed some wavelengths
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 24 May 2017 14:45:10 +0100
+
 neat (2.0.64-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * bugfix, Equation 29 from DI14 for Cl/H was wrong
