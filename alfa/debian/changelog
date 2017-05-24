@@ -1,3 +1,11 @@
+alfa (1.0.73-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * output number of pixels summed when collapsing data cubes
+  * added some near-UV He lines
+  * consistent formatting in catalogues
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 24 May 2017 14:35:44 +0100
+
 alfa (1.0.67-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * --collapse now includes only valid pixels as defined by --bad-data
