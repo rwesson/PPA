@@ -1,3 +1,9 @@
+neat (2.1.00-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
+
+  * 2.0.76 -> 2.1.0
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 05 Jun 2017 17:37:03 +0100
+
 neat (2.0.76-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
 
   * fixed ICFs for recombination lines.  Abundances were correct but the actual ICF used was not written out properly
