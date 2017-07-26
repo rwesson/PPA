@@ -1,3 +1,11 @@
+neat (2.1.08-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
+
+  * faster calculation of recombination line abundances and full implementation of weighting scheme
+  * default weighting for RL multiplets is now by their coadded intensity
+  * fixed bug which prevented Smits 1996 helium data from being used
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 26 Jul 2017 10:47:24 +0100
+
 neat (2.1.00-1ppa1~yakkety1ubuntu1) yakkety; urgency=medium
 
   * 2.0.76 -> 2.1.0
