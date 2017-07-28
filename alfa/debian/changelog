@@ -1,3 +1,14 @@
+alfa (1.0.92-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * options added:
+  * - to change continuum fitting window
+  * - to skip continuum fitting
+  * - to rebin spectra after reading in, useful for very high resolution data
+  * continuum fluxes are now written out in the correct position in line lists
+  * support for reading FITS tables added
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 28 Jul 2017 15:04:58 +0100
+
 alfa (1.0.73-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * output number of pixels summed when collapsing data cubes
