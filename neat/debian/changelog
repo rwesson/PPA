@@ -1,3 +1,9 @@
+neat (2.1.10-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * fixed some array out of bounds errors affecting Smits He data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 21 Aug 2017 04:55:19 +0100
+
 neat (2.1.08-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * faster calculation of recombination line abundances and full implementation of weighting scheme
