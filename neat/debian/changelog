@@ -1,3 +1,9 @@
+neat (2.1.12-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * extrapolated atomic data for SIII to 35000K
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 01 Dec 2017 16:08:08 +0000
+
 neat (2.1.10-1ppa1~trusty1ubuntu2) trusty; urgency=medium
 
   * fixed some array out of bounds errors affecting Smits He data
