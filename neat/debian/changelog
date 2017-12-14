@@ -1,3 +1,9 @@
+neat (2.1.13-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+
+  * fixed a bug which caused diagnostics close to their upper and lower limits to be wrongly given zero weighting when uncertainties were calculated.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 14 Dec 2017 05:45:05 +0000
+
 neat (2.1.12-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
   * extrapolated atomic data for SIII to 35000K
