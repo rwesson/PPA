@@ -3,9 +3,9 @@
 @@ -1,7 +1,7 @@
  FC=gfortran
  LD=gfortran
- FFLAGS += -cpp -fbounds-check -ffree-line-length-0 -fopenmp -Jsource/ -DPREFIX=\"${PREFIX}\"
--PREFIX=/Users/antoniabevan/Documents/Work/DAMOCLES/damocles_2.0_dev
+ FFLAGS += -cpp -fPIC -fbounds-check -ffree-line-length-0 -fopenmp  -Jsource/ -DPREFIX=\"${PREFIX}\"
+-PREFIX=/usr/local
 +PREFIX=/usr
  
  ifeq ($(CO),debug)
-   FFLAGS += -g -pg -fbounds-check -Wall -Wuninitialized -ffpe-trap=zero,overflow,invalid,underflow,denormal
+   FFLAGS += -g -fbounds-check -Wall -Wuninitialized -ffpe-trap=zero,overflow,invalid,underflow,denormal
