@@ -1,3 +1,33 @@
+alfa (1.0.123-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * build failed due to missing test files, now added
+  * reduced initial velocity search from +-900km/s to +-180km/s
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:49:31 +0100
+
+alfa (1.0.116-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * added sky lines in 4800-5700A range, inadvertently omitted before
+  * removed lines coincident with typically observed nebular lines from the sky cats
+  * fixed a typo in deep line catalogue
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:22:29 +0100
+
+alfa (1.0.109-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * fixed bug which caused error message about lines out of range and could occasionally introduce huge spurious lines
+  * fixed sky subtraction routine - previous gave strange results sometimes due to a poorly chosen parameter being passed
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 13 Nov 2017 20:30:22 +0000
+
+alfa (1.0.106-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * --rebin option works on any spectra now, not just 1d
+  * new RNG library replaces fortran intrinsic
+  * added preliminary infrared line list
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 07 Nov 2017 18:59:43 +0000
+
 alfa (1.0.99-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * Added option to specify which columns the data is in if analysing FITS tables
