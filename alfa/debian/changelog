@@ -1,4 +1,4 @@
-alfa (1.0.121-1ppa1~artful1ubuntu1) artful; urgency=medium
+alfa (1.0.123-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * build failed due to missing test files, now added
   * reduced initial velocity search from +-900km/s to +-180km/s
