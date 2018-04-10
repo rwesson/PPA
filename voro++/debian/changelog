@@ -1,16 +1,16 @@
-voro++ (0.4.6-7ppa1~zesty1ubuntu1) zesty; urgency=medium
+voro++ (0.4.6-7ppa1~artful1ubuntu1) artful; urgency=medium
 
   * used pkg-kde-tools
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
 
-voro++ (0.4.6-1ppa1~zesty1ubuntu6) zesty; urgency=medium
+voro++ (0.4.6-1ppa1~artful1ubuntu6) artful; urgency=medium
 
   * patched examples makefiles to compile out of the box
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
 
-voro++ (0.4.6-1ppa1~zesty1ubuntu5) zesty; urgency=medium
+voro++ (0.4.6-1ppa1~artful1ubuntu5) artful; urgency=medium
 
   * packaging improvements
 

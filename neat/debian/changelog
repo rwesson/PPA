@@ -1,22 +1,22 @@
-neat (2.1.13-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.1.13-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * fixed a bug which caused diagnostics close to their upper and lower limits to be wrongly given zero weighting when uncertainties were calculated.
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 14 Dec 2017 05:45:05 +0000
 
-neat (2.1.12-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.1.12-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * extrapolated atomic data for SIII to 35000K
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 01 Dec 2017 16:08:08 +0000
 
-neat (2.1.10-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.1.10-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * fixed some array out of bounds errors affecting Smits He data
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 21 Aug 2017 04:55:19 +0100
 
-neat (2.1.08-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.1.08-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * faster calculation of recombination line abundances and full implementation of weighting scheme
   * default weighting for RL multiplets is now by their coadded intensity
@@ -24,13 +24,13 @@ neat (2.1.08-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 26 Jul 2017 10:47:38 +0100
 
-neat (2.1.00-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.1.00-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * 2.0.76 -> 2.1.0
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 05 Jun 2017 17:37:03 +0100
 
-neat (2.0.76-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.0.76-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * fixed ICFs for recombination lines.  Abundances were correct but the actual ICF used was not written out properly
   * changed zone of Cl IV and S IV from high to medium, IP<40eV for both
@@ -39,7 +39,7 @@ neat (2.0.76-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 31 May 2017 17:13:24 +0100
 
-neat (2.0.72-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.0.72-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * added Cl+ and Cl3+ abundances to calculations
   * improved formatting, figures rounded to 3sf, better checking for close to equal uncertainties
@@ -47,7 +47,7 @@ neat (2.0.72-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 24 May 2017 14:45:10 +0100
 
-neat (2.0.64-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.0.64-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * bugfix, Equation 29 from DI14 for Cl/H was wrong
   * excluded densities below lower limit from averaging for Balmer and Paschen dec densities
@@ -55,25 +55,25 @@ neat (2.0.64-1ppa1~zesty1ubuntu1) zesty; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 May 2017 12:50:43 +0100
 
-neat (2.0.56-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.0.56-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * Fixed bug which meant that uncertainties of lognormal distributions were wrongly reported
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Mar 2017 16:43:21 +0000
 
-neat (2.0.55-1ppa1~zesty1ubuntu1) zesty; urgency=medium
+neat (2.0.55-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * set PREFIX depending on OS
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 14:20:51 +0000
 
-neat (2.00-3ppa1~zesty1) zesty; urgency=medium
+neat (2.00-3ppa1~artful1) artful; urgency=medium
 
   * patched to make build reproducible
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 11 Nov 2016 11:38:46 +0000
 
-neat (2.00-1ppa1~zesty1) zesty; urgency=medium
+neat (2.00-1ppa1~artful1) artful; urgency=medium
 
   * updated build dependencies, standards version
 
