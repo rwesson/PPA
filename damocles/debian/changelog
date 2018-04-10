@@ -1,3 +1,9 @@
+damocles (2.1-1ppa~trusty1ubuntu1) trusty; urgency=medium
+
+  * new upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 16:07:04 +0100
+
 damocles (2.0-1ppa~trusty1ubuntu1) trusty; urgency=medium
 
   * v2.0
