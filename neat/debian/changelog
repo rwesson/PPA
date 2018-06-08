@@ -1,3 +1,11 @@
+neat (2.1.24-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated OII diagnostics to use Storey et al 2017 data
+  * improved output files, diagnostic ratios now specified
+  * extrapolated SIII atomic data to higher temperatures
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 18:37:27 +0100
+
 neat (2.1.13-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * fixed a bug which caused diagnostics close to their upper and lower limits to be wrongly given zero weighting when uncertainties were calculated.
