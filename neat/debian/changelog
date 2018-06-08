@@ -1,4 +1,4 @@
-neat (2.1.28-1ppa1~artful1ubuntu1) trusty; urgency=medium
+neat (2.1.28-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * recombination contribution to collisionally excited lines can be subtracted if desired
   * fixed a bug which set line fluxes to zero if uncertainty was zero
