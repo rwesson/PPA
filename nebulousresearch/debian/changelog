@@ -1,22 +1,22 @@
-nebulousresearch (1.0-4ppa1~bionic1ubuntu1) bionic; urgency=medium
+nebulousresearch (1.0-4ppa1~cosmic1ubuntu1) cosmic; urgency=medium
 
   * added bhmie, nebular and mocassin benchmarks and examples
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 Aug 2016 05:55:21 +0100
 
-nebulousresearch (1.0-3ppa1~bionic1ubuntu2) bionic; urgency=medium
+nebulousresearch (1.0-3ppa1~cosmic1ubuntu2) cosmic; urgency=medium
 
   * added voro++
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 02 Aug 2016 09:09:17 +0100
 
-nebulousresearch (1.0-2ppa1~bionic1ubuntu1) bionic; urgency=medium
+nebulousresearch (1.0-2ppa1~cosmic1ubuntu1) cosmic; urgency=medium
 
   * added cloudy-data to dependency so that it gets uninstalled
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 30 Jul 2016 09:21:37 +0100
 
-nebulousresearch (1.0) bionic; urgency=low
+nebulousresearch (1.0) cosmic; urgency=low
 
   * First version
 

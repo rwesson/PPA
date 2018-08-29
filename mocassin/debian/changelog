@@ -1,34 +1,34 @@
-mocassin (2.02.72-2ppa1~bionic1) bionic; urgency=medium
+mocassin (2.02.72-2ppa1~cosmic1) cosmic; urgency=medium
 
   * simplified build dependencies
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 09 Nov 2016 18:29:02 +0000
 
-mocassin (2.02.72-1ppa1~bionic1) bionic; urgency=medium
+mocassin (2.02.72-1ppa1~cosmic1) cosmic; urgency=medium
 
   * new upstream release, 2.02.72
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 26 Sep 2016 10:08:31 +0100
 
-mocassin (2.02.71-1ppa1~bionic1) bionic; urgency=medium
+mocassin (2.02.71-1ppa1~cosmic1) cosmic; urgency=medium
 
   * new upstream release, 2.02.71
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 17 Aug 2016 17:30:31 +0100
 
-mocassin (2.02.70.9-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+mocassin (2.02.70.9-1ppa1~cosmic1ubuntu1) cosmic; urgency=medium
 
   * replaced all pointers with allocatable arrays to fix memory leaks
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 15 Aug 2016 13:39:03 +0100
 
-mocassin (2.02.70.8-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+mocassin (2.02.70.8-1ppa1~cosmic1ubuntu1) cosmic; urgency=medium
 
   * actually fixed to run with gfortran 5; previous fix had deallocate instead of nullify in a few places
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 01 Aug 2016 20:35:23 +0100
 
-mocassin (2.02.70.7-1ppa1~bionic1) bionic; urgency=low
+mocassin (2.02.70.7-1ppa1~cosmic1) cosmic; urgency=low
 
   * fixed to run with gfortran 5
   * various usability fixes
