@@ -1,3 +1,10 @@
+alfa (1.0.128-1ppa1~artful1ubuntu2) artful; urgency=medium
+
+  * improved output formatting
+  * fixed bug which caused some pixels to have fluxes written out exactly 100x too large when measuring a data cube with no normalisation
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 13 Sep 2018 11:37:04 +0100
+
 alfa (1.0.123-1ppa1~artful1ubuntu1) artful; urgency=medium
 
   * build failed due to missing test files, now added
