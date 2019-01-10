@@ -12,18 +12,18 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  LIBEXT = a
 +CLOUDY_DATA_PATH=${DESTDIR}/usr/share/cloudy/data
  
- .PHONY: all default data debug clean distclean debug-test test valgrind-test depend
+ .PHONY: all default data debug testclean clean distclean debug-test test valgrind-test depend echo-cxx echo-cxxflags
  
-@@ -147,7 +148,7 @@
- CXXFLAGSNOCFG := ${filter-out ${CFGFILTER},${CXXFLAGS}}
+@@ -169,7 +170,7 @@
+ endif
  
  # Makefile.targets can override or add to the DEFAULT variable.
--DEFAULT = cloudy.exe data
-+DEFAULT = cloudy data
+-DEFAULT = cloudy.exe data md5datafile.exe
++DEFAULT = cloudy data md5datafile
  
  # include additional targets from file if one exists (or carry on without
  # worrying if it doesn't)
-@@ -157,8 +158,8 @@
+@@ -179,8 +180,8 @@
  
  default: $(DEFAULT)
  
@@ -33,11 +33,23 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
 +	${CXX} ${LDFLAGS} -o cloudy maincl.${OBJEXT} -L. -lcloudy ${LDLIBS}
  
  libcloudy.${LIBEXT}: ${libobjects}
- 	ar ru libcloudy.${LIBEXT} $^
-@@ -168,21 +169,21 @@
+ 	ar cr libcloudy.${LIBEXT} $^
+@@ -189,29 +190,29 @@
+ data:
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
  
- clean:
+-md5datafile.exe: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
+-	${CXX} ${LDFLAGS} -o md5datafile.exe md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
++md5datafile: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
++	${CXX} ${LDFLAGS} -o md5datafile md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
+ 
+ testclean:
+ 	rm -f Test*.${OBJEXT}
+ 	rm -f Test*.d
+-	rm -f runtests.exe
++	rm -f runtests
+ 
+ clean: testclean
 -	rm -f *.${OBJEXT}
 -	rm -f *.d
 -	rm -f *.h.gch
@@ -51,13 +63,11 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
 +	rm -rf ${SRCDIR}/cloudy.dSYM
 +	rm -f ${SRCDIR}/libcloudy.${LIBEXT}
  	rm -f $(DEFAULT)
--	rm -f runtests.exe
 -	rm -rf tmp_cloudyconfig.*
-+	rm -f ${SRCDIR}/runtests
 +	rm -rf ${SRCDIR}/tmp_cloudyconfig.*
+ 	rm -f cloudyconfig.h
  
  distclean: clean
- 	rm -f cloudyconfig.h
  	rm -f ${SRCDIR}/Makefile.conf
 -	rm -rf lib
 -	rm -rf include
@@ -66,15 +76,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  	cd ${SRCDIR}/../library/UnitTest++ && $(MAKE) clean
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) clean
  
-@@ -208,19 +209,19 @@
- 	${CXX} ${CXXFLAGS} -o $@ $<
- 	${SRCDIR}/make_depend.pl "${DEPCMD} $<" ${@:.h.gch=.o} $@ ${CLDCONFIG} ${@:.gch=.d}
- 
--${CLDCONFIG}: ${SRCDIR}/configure.sh
-+${CLDCONFIG}: $(SRCDIR)/configure.sh
- 	@echo "Creating cloudyconfig.h"
--	@${SRCDIR}/configure.sh ${CXX} ${CXXFLAGSNOCFG} -I${SRCDIR}
-+	@$(SRCDIR)/configure.sh ${CXX} ${CXXFLAGSNOCFG} -I${SRCDIR}
+@@ -252,15 +253,15 @@
  
  debug-test: test
  
@@ -88,14 +90,10 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
 +valgrind-test: runtests
 +	valgrind --leak-check=full --track-fds=yes ./runtests
  
--runtests.exe: lib/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
-+runtests: lib/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
- 	${CXX} ${CXXFLAGS} -${OBJEXT} $@ ${filter-out %.${LIBEXT}, $^} ${LDFLAGS} -L. -lcloudy -Llib -lUnitTest++ ${LDLIBS}
+ TESTLIBS := -L. -lcloudy -Llib/UnitTest++ -lUnitTest++
  
- # the dependency on libUnitTest++.a is needed to make sure header files are in place.
-@@ -252,4 +253,4 @@
- # the way we create dependency files is discussed in http://scottmcpeak.com/autodepend/autodepend.html
- ifneq (${DEP_GOALS},)
- -include ${predepends} ${fulldepends}
--endif
-+endif 
+-runtests.exe: lib/UnitTest++/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
++runtests: lib/UnitTest++/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
+ 	${CXX} ${CXXFLAGS} -${OBJEXT} $@ ${filter-out %.${LIBEXT}, $^} ${LDFLAGS} ${TESTLIBS} ${LDLIBS}
+ 
+ lib/UnitTest++/libUnitTest++.${LIBEXT}: lib/UnitTest++/README
