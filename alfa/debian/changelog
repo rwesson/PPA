@@ -1,3 +1,9 @@
+alfa (1.0.130-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * version used now reported in output files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 15 Feb 2019 20:18:06 +0000
+
 alfa (1.0.129-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * Bug fix, added condition to avoid possibility of out-of-bounds error
