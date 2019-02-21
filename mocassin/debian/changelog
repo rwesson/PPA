@@ -1,3 +1,9 @@
+mocassin (2.02.73.2-3ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * fixed examples package error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 21 Feb 2019 19:44:19 +0000
+
 mocassin (2.02.73.2-2ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * fixed package error
