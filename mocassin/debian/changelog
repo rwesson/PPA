@@ -1,3 +1,13 @@
+mocassin (2.02.73-1ppa1~cosmic1ubuntu1) cosmic; urgency=medium
+
+  * fixed bug introduced in 2.02.71 which prevented HeII emission line maps from being created
+  * added header row in equivalentTau.out
+  * made format of lineFlux.out more consistent
+  * better error trapping
+  * nPhotons can now be specified in scientific notation
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 21 Feb 2019 19:19:18 +0000
+
 mocassin (2.02.72-2ppa1~cosmic1) cosmic; urgency=medium
 
   * simplified build dependencies
