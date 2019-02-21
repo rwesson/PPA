@@ -1,3 +1,9 @@
+mocassin (2.02.73.2-2ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed package error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 21 Feb 2019 19:39:22 +0000
+
 mocassin (2.02.73.2-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * fixed bug introduced in 2.02.71 which prevented HeII emission line maps from being created
