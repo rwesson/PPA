@@ -1,3 +1,9 @@
+mocassin (2.02.73.2-4ppa1~cosmic1ubuntu1) cosmic; urgency=medium
+
+  * added mocassinPlot, mocassinOutput and mocassinWarm to package
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 06 Mar 2019 11:30:21 +0000
+
 mocassin (2.02.73.2-3ppa1~cosmic1ubuntu1) cosmic; urgency=medium
 
   * fixed examples package error
