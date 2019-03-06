@@ -1,2 +1,5 @@
 /usr/bin/mocassin
+/usr/bin/mocassinOutput
+/usr/bin/mocassinPlot
+/usr/bin/mocassinWarm
 /usr/share/man/man1/mocassin.1.gz
