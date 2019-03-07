@@ -1,3 +1,10 @@
+alfa (1.0.132-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * version recorded in _fit output files
+  * column names shown when reading in FITS tables
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 07 Mar 2019 14:49:37 +0000
+
 alfa (1.0.130-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * version used now reported in output files
