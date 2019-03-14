@@ -1,3 +1,9 @@
+neat (2.2.34-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * fixed formatting of linelist output files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 14 Mar 2019 17:55:37 +0000
+
 neat (2.2.33-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * replaced OII atomic data from Liu et al 1995 with newer calculations from Storey et al. 2017
