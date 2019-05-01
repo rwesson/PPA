@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/baposter-$1\.tar\.gz/ \
+  https://github.com/anriseth/baposter/tags .*/v?(\d\S*)\.tar\.gz
