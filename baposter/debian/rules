@@ -27,7 +27,7 @@ install: build
 	dh_testroot
 	dh_prep
 	dh_installdirs
-	cp baposter.cls $(CURDIR)/debian/latex-baposter/usr/share/texmf/tex/latex/baposter
+	cp baposter.cls $(CURDIR)/debian/latex-baposter/usr/share/texlive/texmf-dist/tex/latex/baposter
 
 # Build architecture-independent files here.
 binary-indep: build install
