@@ -1,10 +1,10 @@
-baposter (1.0.15-1~ppa1~cosmic1ubuntu2) cosmic; urgency=medium
+baposter (1.0.15-1~ppa1~disco1ubuntu2) disco; urgency=medium
 
   * changed file location
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 16:38:04 +0100
 
-baposter (1.0.15-1~ppa1~cosmic1ubuntu1) cosmic; urgency=medium
+baposter (1.0.15-1~ppa1~disco1ubuntu1) disco; urgency=medium
 
    * Initial version
 

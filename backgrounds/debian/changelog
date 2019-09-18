@@ -1,10 +1,10 @@
-nebulousresearch-backgrounds (1.0-1ppa1~cosmic1ubuntu1) cosmic; urgency=medium
+nebulousresearch-backgrounds (1.0-1ppa1~disco1ubuntu1) disco; urgency=medium
 
-  * package for cosmic
+  * package for disco
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:09:57 +0100
 
-nebulousresearch-backgrounds (1.0-1ppa1~cosmic1) cosmic; urgency=low
+nebulousresearch-backgrounds (1.0-1ppa1~disco1) disco; urgency=low
 
   * Initial release.
 

@@ -1,10 +1,10 @@
-cloudy (17.01-1ppa1~cosmic1ubuntu1) cosmic; urgency=medium
+cloudy (17.01-1ppa1~disco1ubuntu1) disco; urgency=medium
 
   * new upstream version
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 31 Oct 2018 14:44:01 +0000
 
-cloudy (13.04-1ppa1~cosmic1) cosmic; urgency=low
+cloudy (13.04-1ppa1~disco1) disco; urgency=low
 
   * new upstream version
 
