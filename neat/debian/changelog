@@ -1,3 +1,10 @@
+neat (2.2.37-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated collisional atomic data to CHIANTI 9.0
+  * added option to use classical icf(N) with DI14
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 18 Sep 2019 00:00:54 +0100
+
 neat (2.2.34-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * fixed formatting of linelist output files
