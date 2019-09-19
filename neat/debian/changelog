@@ -1,3 +1,9 @@
+neat (2.2.39-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * fixed an out of bounds error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 17:50:07 +0100
+
 neat (2.2.38-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * reverted to older atomic data files for three species
