@@ -1,3 +1,9 @@
+neat (2.2.40-1ppa1~disco1ubuntu1) disco; urgency=medium
+
+  * last update inadvertently did nothing. this one genuinely fixes out of bounds error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 19:58:01 +0100
+
 neat (2.2.39-1ppa1~disco1ubuntu1) disco; urgency=medium
 
   * fixed an out of bounds error
