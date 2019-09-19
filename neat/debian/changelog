@@ -1,3 +1,9 @@
+neat (2.2.38-1ppa1~disco1ubuntu1) disco; urgency=medium
+
+  * reverted to older atomic data files for three species
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 10:38:07 +0100
+
 neat (2.2.37-1ppa1~disco1ubuntu1) disco; urgency=medium
 
   * updated collisional atomic data to CHIANTI 9.0
