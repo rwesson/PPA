@@ -1,10 +1,10 @@
-baposter (1.0.15-1~ppa1~bionic1ubuntu2) bionic; urgency=medium
+baposter (1.0.15-1~ppa1~eoan1ubuntu2) eoan; urgency=medium
 
   * changed file location
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 16:38:04 +0100
 
-baposter (1.0.15-1~ppa1~bionic1ubuntu1) bionic; urgency=medium
+baposter (1.0.15-1~ppa1~eoan1ubuntu1) eoan; urgency=medium
 
    * Initial version
 

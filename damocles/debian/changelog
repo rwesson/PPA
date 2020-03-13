@@ -1,16 +1,16 @@
-damocles (2.1-1ppa~bionic1ubuntu1) bionic; urgency=medium
+damocles (2.1-1ppa~eoan1ubuntu1) eoan; urgency=medium
 
   * new upstream version
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 16:58:03 +0100
 
-damocles (2.0-1ppa~bionic1ubuntu1) bionic; urgency=medium
+damocles (2.0-1ppa~eoan1ubuntu1) eoan; urgency=medium
 
   * v2.0
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Mar 2017 21:26:44 +0000
 
-damocles (1.0-1ppa~bionic1) bionic; urgency=medium
+damocles (1.0-1ppa~eoan1) eoan; urgency=medium
 
   * Initial package.
 

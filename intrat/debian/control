@@ -2,8 +2,8 @@ Source: intrat
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 9.0.0), gfortran
-Standards-Version: 3.9.8
+Build-Depends: debhelper (>= 10.0.0), gfortran
+Standards-Version: 4.5.0
 Homepage: http://cdsarc.u-strasbg.fr/cgi-bin/myqcat3?VI/64/
 
 Package: intrat

@@ -1,28 +1,28 @@
-nebular (1.2-2ppa1~bionic1ubuntu1) bionic; urgency=medium
+nebular (1.2-2ppa1~eoan1ubuntu1) eoan; urgency=medium
 
   * patched to avoid user needing to set environment variable
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 16 Jan 2017 12:10:41 +0000
 
-nebular (1.2-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+nebular (1.2-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
   * New upstream version
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 13:58:45 +0000
 
-nebular (1.0-7ppa1~bionic1ubuntu1) bionic; urgency=low
+nebular (1.0-7ppa1~eoan1ubuntu1) eoan; urgency=low
 
   * dependency fix
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 10:43:47 +0100
 
-nebular (1.0-6ppa1~bionic1) bionic; urgency=low
+nebular (1.0-6ppa1~eoan1) eoan; urgency=low
 
   * installed data
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 16 Aug 2016 07:34:20 +0100
 
-nebular (1.0-5ppa1~bionic1) bionic; urgency=low
+nebular (1.0-5ppa1~eoan1) eoan; urgency=low
 
   * Fixed package.
 

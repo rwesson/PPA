@@ -2,10 +2,10 @@ Source: alfa
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 9.0.0),
+Build-Depends: debhelper (>= 10.0.0),
                gfortran,
                libcfitsio-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.5.0
 Homepage: https://github.com/rwesson/ALFA
 
 Package: alfa

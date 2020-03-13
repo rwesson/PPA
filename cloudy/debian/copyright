@@ -1,6 +1,6 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: cloudy
-Source: http://www.nublado.org
+Source: https://www.nublado.org
 
 Files: *
 Copyright: (C) 1978-2013 Gary J. Ferland and others.
@@ -41,7 +41,7 @@ License: LGPL-3
 Files: data/chianti/*
 Copyright: CHIANTI consortium, 1997-
 License: custom-chianti
- From http://www.chiantidatabase.org/:
+ From https://www.chiantidatabase.org/:
  "The CHIANTI package is freely available. If you use the package, we only ask
  you to appropriately acknowledge CHIANTI"
  Version 7.0: Dere et al., 1997; A&AS, 125, 14, Landi et al., 2012; ApJS, 744, 99

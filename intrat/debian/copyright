@@ -1,6 +1,6 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: intrat
-Source: <http://cdsarc.u-strasbg.fr/cgi-bin/myqcat3?VI/64/>
+Source: <https://cdsarc.u-strasbg.fr/cgi-bin/myqcat3?VI/64/>
 
 Files: *
 Copyright: 1995 P.J. Storey, D.G. Hummer

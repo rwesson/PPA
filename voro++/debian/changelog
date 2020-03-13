@@ -1,16 +1,16 @@
-voro++ (0.4.6-7ppa1~bionic1ubuntu1) bionic; urgency=medium
+voro++ (0.4.6-7ppa1~eoan1ubuntu1) eoan; urgency=medium
 
   * used pkg-kde-tools
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
 
-voro++ (0.4.6-1ppa1~bionic1ubuntu6) bionic; urgency=medium
+voro++ (0.4.6-1ppa1~eoan1ubuntu6) eoan; urgency=medium
 
   * patched examples makefiles to compile out of the box
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
 
-voro++ (0.4.6-1ppa1~bionic1ubuntu5) bionic; urgency=medium
+voro++ (0.4.6-1ppa1~eoan1ubuntu5) eoan; urgency=medium
 
   * packaging improvements
 
