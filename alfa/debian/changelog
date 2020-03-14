@@ -1,3 +1,11 @@
+alfa (1.0.138-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * improved fitting behaviour, avoiding issues caused by large residuals of lines not present in the line catalogue
+  * added an intermediate depth optical line catalogue
+  * updated a link to CFITSIO manual in man page
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 13 Mar 2020 23:31:51 +0000
+
 alfa (1.0.132-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * version recorded in _fit output files
