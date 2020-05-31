@@ -1,3 +1,16 @@
+alfa (2.01-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * fixed bug affecting normalisation in 2D and 3D dataset fitting
+  * fixed bug which prevented image sections from being fitted
+  * fixed FITS output to record number of detected lines correctly
+  * used negative flux values in FITS output to indicate upper limits
+  * blends indicated by absence of observed wavelength value
+  * recorded settings in comments in FITS header
+  * fixed tests for output file already existing
+  * implemented command line option to allow clobbering of previous outputs
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sun, 31 May 2020 22:50:33 +0100
+
 alfa (2.0-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * implemented new output formats: FITS, csv, latex or plain text can be selected
