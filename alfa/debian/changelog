@@ -1,4 +1,4 @@
-alfa (2.01-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+alfa (2.02-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * fixed bug affecting normalisation in 2D and 3D dataset fitting
   * fixed bug which prevented image sections from being fitted
