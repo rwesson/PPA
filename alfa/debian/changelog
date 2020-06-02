@@ -1,3 +1,11 @@
+alfa (2.03-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * exclusion of lines algorithm replaced with simpler but more robust version
+  * fixed a bug which caused FITS problems if no normalisation was specified
+  * continuum fluxes are included in the FITS LINES extension
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 02 Jun 2020 23:08:58 +0100
+
 alfa (2.02-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * fixed bug affecting normalisation in 2D and 3D dataset fitting
