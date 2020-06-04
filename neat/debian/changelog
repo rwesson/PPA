@@ -1,3 +1,21 @@
+neat (2.3-1ppa1~trusty1ubuntu3) trusty; urgency=medium
+
+  * fixed cfitsio package name in dependency
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 17:30:59 +0100
+
+neat (2.3-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * build now depends on cfitsio
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 16:02:27 +0100
+
+neat (2.3-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * implemented FITS reading and writing. FITS files produced by ALFA can be read in, and the results will be added to the file. Text output is deprecated and will be removed in a future release.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 15:48:57 +0100
+
 neat (2.2.40-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * last update inadvertently did nothing. this one genuinely fixes out of bounds error
