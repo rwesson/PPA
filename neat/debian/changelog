@@ -1,3 +1,11 @@
+neat (2.3.12-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * atomic data included in FITS output tables
+  * added calculation of Te from He I 7281/6678 ratio
+  * improved code efficiency for minor speedup
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 11 Jun 2020 13:35:16 +0100
+
 neat (2.3-1ppa1~trusty1ubuntu3) trusty; urgency=medium
 
   * fixed cfitsio package name in dependency
