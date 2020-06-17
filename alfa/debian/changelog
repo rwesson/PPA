@@ -1,3 +1,12 @@
+alfa (2.0.44-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * fixed a bug which caused occasional crashes in spectra with no emission lines.
+  * fixed a bug which allowed different threads to attempt to write to the same FITS unit
+  * fixed a bug which very occasionally caused an out-of-bounds error
+  * recorded estimated redshift and resolution in non-FITS output formats
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 17 Jun 2020 16:09:05 +0100
+
 alfa (2.0.38.1-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * previous package was built using incorrect source code
