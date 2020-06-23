@@ -1,3 +1,9 @@
+alfa (2.0.46-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * fixed a bug which resulted in the wrong continuum value being written out when spectra were normalised
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 23 Jun 2020 15:06:48 +0100
+
 alfa (2.0.44-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * fixed a bug which caused occasional crashes in spectra with no emission lines.
