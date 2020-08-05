@@ -1,3 +1,9 @@
+alfa (2.0.47-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * Fixed bug preventing spectra with wavelengths >10,000A from being fitted
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Aug 2020 18:48:04 +0100
+
 alfa (2.0.46-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * fixed a bug which resulted in the wrong continuum value being written out when spectra were normalised
