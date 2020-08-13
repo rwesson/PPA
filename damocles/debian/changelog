@@ -1,3 +1,9 @@
+damocles (2.11-1ppa~trusty1ubuntu2) trusty; urgency=medium
+
+  * updated packaging files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 13 Aug 2020 11:28:48 +0100
+
 damocles (2.11-1ppa~trusty1ubuntu1) trusty; urgency=medium
 
   * latest upstream version
