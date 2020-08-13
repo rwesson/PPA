@@ -1,16 +1,16 @@
-voro++ (0.4.6-7ppa1~eoan1ubuntu1) eoan; urgency=medium
+voro++ (0.4.6-7ppa1~focal1ubuntu1) focal; urgency=medium
 
   * used pkg-kde-tools
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
 
-voro++ (0.4.6-1ppa1~eoan1ubuntu6) eoan; urgency=medium
+voro++ (0.4.6-1ppa1~focal1ubuntu6) focal; urgency=medium
 
   * patched examples makefiles to compile out of the box
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
 
-voro++ (0.4.6-1ppa1~eoan1ubuntu5) eoan; urgency=medium
+voro++ (0.4.6-1ppa1~focal1ubuntu5) focal; urgency=medium
 
   * packaging improvements
 

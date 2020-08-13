@@ -1,22 +1,22 @@
-alfa (2.0.48-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.48-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * line lists extending to >10,000A had wrong column width for ion name
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Aug 2020 20:08:55 +0100
 
-alfa (2.0.47-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.47-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Fixed bug preventing spectra with wavelengths >10,000A from being fitted
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Aug 2020 18:48:04 +0100
 
-alfa (2.0.46-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.46-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed a bug which resulted in the wrong continuum value being written out when spectra were normalised
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 23 Jun 2020 15:06:48 +0100
 
-alfa (2.0.44-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.44-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed a bug which caused occasional crashes in spectra with no emission lines.
   * fixed a bug which allowed different threads to attempt to write to the same FITS unit
@@ -25,20 +25,20 @@ alfa (2.0.44-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 17 Jun 2020 16:09:05 +0100
 
-alfa (2.0.38.1-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.38.1-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * previous package was built using incorrect source code
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 11 Jun 2020 16:11:18 +0100
 
-alfa (2.0.38-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.38-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * improved FITS handling, ensuring output complies with standard
   * atomic data for lines is included in output tables
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 11 Jun 2020 13:10:39 +0100
 
-alfa (2.0.26-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0.26-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * exclusion of lines algorithm replaced with simpler but more robust version
   * fixed a bug which caused FITS problems if no normalisation was specified
@@ -46,7 +46,7 @@ alfa (2.0.26-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 02 Jun 2020 23:08:58 +0100
 
-alfa (2.02.21-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.02.21-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed bug affecting normalisation in 2D and 3D dataset fitting
   * fixed bug which prevented image sections from being fitted
@@ -59,20 +59,20 @@ alfa (2.02.21-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sun, 31 May 2020 22:50:33 +0100
 
-alfa (2.0-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (2.0-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * implemented new output formats: FITS, csv, latex or plain text can be selected
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 28 May 2020 13:55:19 +0100
 
-alfa (1.0.140-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.140-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * improved masking of non-line regions
   * fixed bug introduced in 1.0.138, incorrect column was written out in _fit file
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Mar 2020 11:23:35 +0000
 
-alfa (1.0.138-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.138-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * improved fitting behaviour, avoiding issues caused by large residuals of lines not present in the line catalogue
   * added an intermediate depth optical line catalogue
@@ -80,46 +80,46 @@ alfa (1.0.138-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 13 Mar 2020 23:31:51 +0000
 
-alfa (1.0.132-1ppa1~eoan1ubuntu2) eoan; urgency=medium
+alfa (1.0.132-1ppa1~focal1ubuntu2) focal; urgency=medium
 
   * specified --no-parallel in debian/rules
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 02 Mar 2020 22:01:49 +0000
 
-alfa (1.0.132-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.132-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * version recorded in _fit output files
   * column names shown when reading in FITS tables
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 07 Mar 2019 14:49:37 +0000
 
-alfa (1.0.130-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.130-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * version used now reported in output files
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 15 Feb 2019 20:18:06 +0000
 
-alfa (1.0.129-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.129-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Bug fix, added condition to avoid possibility of out-of-bounds error
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 10 Jan 2019 11:04:46 +0000
 
-alfa (1.0.128-1ppa1~eoan1ubuntu2) eoan; urgency=medium
+alfa (1.0.128-1ppa1~focal1ubuntu2) focal; urgency=medium
 
   * improved output formatting
   * fixed bug which caused some pixels to have fluxes written out exactly 100x too large when measuring a data cube with no normalisation
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 13 Sep 2018 11:37:04 +0100
 
-alfa (1.0.123-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.123-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * build failed due to missing test files, now added
   * reduced initial velocity search from +-900km/s to +-180km/s
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:49:31 +0100
 
-alfa (1.0.116-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.116-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * added sky lines in 4800-5700A range, inadvertently omitted before
   * removed lines coincident with typically observed nebular lines from the sky cats
@@ -127,14 +127,14 @@ alfa (1.0.116-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:22:29 +0100
 
-alfa (1.0.109-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.109-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed bug which caused error message about lines out of range and could occasionally introduce huge spurious lines
   * fixed sky subtraction routine - previous gave strange results sometimes due to a poorly chosen parameter being passed
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 13 Nov 2017 20:30:22 +0000
 
-alfa (1.0.106-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.106-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * --rebin option works on any spectra now, not just 1d
   * new RNG library replaces fortran intrinsic
@@ -142,21 +142,21 @@ alfa (1.0.106-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 07 Nov 2017 18:59:43 +0000
 
-alfa (1.0.99-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.99-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Added option to specify which columns the data is in if analysing FITS tables
   * command line used now recorded in output file
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 05 Oct 2017 18:02:56 +0100
 
-alfa (1.0.97-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.97-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed bug which occasionally prevented final line being fitted
-  * intelligently deteoan file reading format, should work for any wavelength now
+  * intelligently detfocal file reading format, should work for any wavelength now
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 26 Aug 2017 05:30:47 +0100
 
-alfa (1.0.92-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.92-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * options added:
   * - to change continuum fitting window
@@ -167,7 +167,7 @@ alfa (1.0.92-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 28 Jul 2017 15:04:58 +0100
 
-alfa (1.0.73-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.73-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * output number of pixels summed when collapsing data cubes
   * added some near-UV He lines
@@ -175,68 +175,68 @@ alfa (1.0.73-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 24 May 2017 14:35:44 +0100
 
-alfa (1.0.67-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.67-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * --collapse now includes only valid pixels as defined by --bad-data
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 06 Mar 2017 11:51:32 +0000
 
-alfa (1.0.66-1ppa1~eoan1ubuntu2) eoan; urgency=medium
+alfa (1.0.66-1ppa1~focal1ubuntu2) focal; urgency=medium
 
   * implemented option to vary detection limit from 3sigma
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 03 Mar 2017 16:01:06 +0000
 
-alfa (1.0.65-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.65-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * various minor fixes for strict compilers
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 28 Feb 2017 21:56:58 +0000
 
-alfa (1.0.55-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.55-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fit file header row commented out, more convenient in gnuplot
   * line lists now contain peak and FWHM
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 16 Feb 2017 19:09:22 +0000
 
-alfa (1.0.53-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.53-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * added option to fit sum of all rows/pixels for >1D files, and to specify lines to exclude from the fit
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 08 Feb 2017 14:23:59 +0000
 
-alfa (1.0.51-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.51-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * new option to fit coadded rows/pixels of 2D/3D data
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 04 Feb 2017 14:27:45 +0000
 
-alfa (1.0.49-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.49-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Fixed incorrect filename check which resulted in all files being treated as FITS files
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 Feb 2017 18:34:23 +0000
 
-alfa (1.0.48-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.48-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Fixed file reading, image sections now accepted
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 Feb 2017 15:09:01 +0000
 
-alfa (1.0.47-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.47-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Fixed bug introduced in 1.0.45 which prevented 1D files from being fitted
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 27 Jan 2017 11:58:11 +0000
 
-alfa (1.0.45-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.45-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * wrong values of velocity and resolution were used as initial guesses in fits of 2D and 3D data, sometimes resulting in bad fits, and a parallelisation bug meant that sometimes a pixel was re-fitted or not fitted when the opposite should have been the case.
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 26 Jan 2017 19:45:21 +0000
 
-alfa (1.0.43-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.43-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * improved file handling
   * extended sky line catalogue to 2.25um
@@ -245,43 +245,43 @@ alfa (1.0.43-1ppa1~eoan1ubuntu1) eoan; urgency=medium
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 Jan 2017 18:58:01 +0000
 
-alfa (1.0.35-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.35-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * more verbose file reading information
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 11:53:34 +0000
 
-alfa (1.0.2-1ppa1~eoan1ubuntu2) eoan; urgency=medium
+alfa (1.0.2-1ppa1~focal1ubuntu2) focal; urgency=medium
 
   * further file reading fix
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Jan 2017 16:37:54 +0000
 
-alfa (1.0.1-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+alfa (1.0.1-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * fixed file reading and changed file naming format to allow very large FITS files to be fitted without format overflow
 
  -- Roger Wesson <rw@nebulousresearch.org>  Mon, 09 Jan 2017 20:41:35 +0000
 
-alfa (1.0-3ppa1~eoan1) eoan; urgency=medium
+alfa (1.0-3ppa1~focal1) focal; urgency=medium
 
   * patched to remove debugging comments displayed when reading 1D FITS files
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 29 Nov 2016 15:35:54 +0000
 
-alfa (1.0-2ppa1~eoan1) eoan; urgency=medium
+alfa (1.0-2ppa1~focal1) focal; urgency=medium
 
   * simplified build dependencies
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 09 Nov 2016 14:00:17 +0000
 
-alfa (1.0-1ppa1~eoan1) eoan; urgency=medium
+alfa (1.0-1ppa1~focal1) focal; urgency=medium
 
   * New upstream version
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Aug 2016 13:37:11 +0100
 
-alfa (0.99-2ppa1~eoan1) eoan; urgency=low
+alfa (0.99-2ppa1~focal1) focal; urgency=low
 
   * Fixed dependency issue
 

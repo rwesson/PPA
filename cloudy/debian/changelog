@@ -1,10 +1,10 @@
-cloudy (17.01-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+cloudy (17.01-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * new upstream version
 
  -- Roger Wesson <rw@nebulousresearch.org>  Wed, 31 Oct 2018 14:44:01 +0000
 
-cloudy (13.04-1ppa1~eoan1) eoan; urgency=low
+cloudy (13.04-1ppa1~focal1) focal; urgency=low
 
   * new upstream version
 
