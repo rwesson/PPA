@@ -2,12 +2,12 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: damocles
 Source: https://github.com/rwesson/damocles
 
-Files: debian/*
-Copyright: 2016 Roger Wesson
-License: GPL-3+
-
 Files: *
 Copyright: 2012-2015 Antonia Bevan
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2016 Roger Wesson
 License: GPL-3+
 
 License: GPL-3+

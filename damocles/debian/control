@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Build-Depends: debhelper (>= 10.0.0),
                gfortran
-Standards-Version: 3.9.7
+Standards-Version: 4.5.0
 Homepage: https://github.com/rwesson/damocles
 
 Package: damocles
