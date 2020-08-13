@@ -1,3 +1,9 @@
+damocles (2.11-1ppa~xenial1ubuntu2) xenial; urgency=medium
+
+  * updated packaging files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 13 Aug 2020 11:28:48 +0100
+
 damocles (2.11-1ppa~xenial1ubuntu1) xenial; urgency=medium
 
   * latest upstream version
