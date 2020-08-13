@@ -3,11 +3,8 @@ Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Build-Depends: debhelper (>= 10.0.0),
-               gfortran,
-               libc6 (>= 2.14),
-               libgfortran3 (>= 4.6),
-               libgomp1 (>= 4.2.1)
-Standards-Version: 3.9.7
+               gfortran
+Standards-Version: 4.5.0
 Homepage: https://github.com/rwesson/damocles
 
 Package: damocles
