@@ -1,3 +1,11 @@
+neat (2.3.16-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * Adjusted some CFITSIO calls to avoid gfortran-10 errors
+  * fixed line finder routine which had been broken by recent file format changes
+  * ensured consistent field widths in utilities/complete_line_list
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 18 Sep 2020 13:08:37 +0100
+
 neat (2.3.12-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * atomic data included in FITS output tables
