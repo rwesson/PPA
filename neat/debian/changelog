@@ -1,3 +1,9 @@
+neat (2.3.18-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * Error codes returned if analysis is not completed
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 29 Oct 2020 07:00:18 +0000
+
 neat (2.3.16-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * Adjusted some CFITSIO calls to avoid gfortran-10 errors
