@@ -1,4 +1,4 @@
-neat (2.3.18-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+neat (2.3.18-1ppa1~trusty1ubuntu2) trusty; urgency=medium
 
   * Error codes returned if analysis is not completed
 
