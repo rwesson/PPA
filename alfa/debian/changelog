@@ -1,3 +1,9 @@
+alfa (2.0.53-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * Removed a non-useful line from WEAVE-specific line list
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 Nov 2020 11:49:56 +0000
+
 alfa (2.0.52-1ppa1~bionic1ubuntu2) bionic; urgency=medium
 
   * more specific error codes returned if fit does not succeed
