@@ -1,3 +1,9 @@
+neat (2.3.20-1ppa1~focal1ubuntu1) focal; urgency=medium
+
+  * included recombination line reliability flag in FITS output
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 Nov 2020 18:33:48 +0000
+
 neat (2.3.18-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * Error codes returned if analysis is not completed
