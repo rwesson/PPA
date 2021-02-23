@@ -1,3 +1,9 @@
+neat (2.3.25-1ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+  * rearranged QC output for consistency with files produced by ALFA
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 26 Nov 2020 17:12:38 +0000
+
 neat (2.3.20-1ppa1~xenial1ubuntu1) xenial; urgency=medium
 
   * included recombination line reliability flag in FITS output
