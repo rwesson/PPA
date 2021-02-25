@@ -1,3 +1,9 @@
+alfa (2.1.1-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * fixed dependency
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 23 Feb 2021 10:54:52 +0000
+
 alfa (2.1.1-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * initialised line fluxes based on the data instead of assuming Hbeta~100
