@@ -1,3 +1,11 @@
+neat (2.3.33-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * removed hard coded Balmer line ratios in extinction calculation
+  * fixed a bug which meant invalid FITS files were sometimes created
+  * --output-dir was previously only used when writing FITS files, now used for text output as well
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 25 Feb 2021 18:02:14 +0000
+
 neat (2.3.25-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * rearranged QC output for consistency with files produced by ALFA
