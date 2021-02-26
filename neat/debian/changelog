@@ -1,3 +1,11 @@
+neat (2.3.41-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * deallocate arrays at end of calculations
+  * fixed output, results files were not written out to the right place when --output-dir was specified
+  * fixed out-of-bounds errors caused by extinction routine going beyond the available atomic data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Feb 2021 13:54:59 +0000
+
 neat (2.3.33-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * removed hard coded Balmer line ratios in extinction calculation
