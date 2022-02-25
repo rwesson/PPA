@@ -2,12 +2,12 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: neat
 Source: https://github.com/rwesson/NEAT
 
-Files: debian/*
-Copyright: 2016 Roger Wesson
-License: GPL-3+
-
 Files: *
 Copyright: 2015 Roger Wesson, Dave Stock, Peter Scicluna
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2016 Roger Wesson
 License: GPL-3+
 
 License: GPL-3+
