@@ -1,0 +1,17 @@
+ASCL-Id: 1512.005
+Bug-Database: https://github.com/rwesson/ALFA/issues
+Bug-Submit: https://github.com/rwesson/ALFA/issues/new
+Contact: rw@nebulousresearch.org
+Name: alfa
+Reference:
+  Author: Wesson, R.
+  Title: "ALFA: an automated line fitting algorithm"
+  Journal: Monthly Notice of the Royal Astronomical Society
+  Year: 2016
+  Volume: 456
+  Pages: 3774-3781
+  DOI: 10.1093/mnras/stv2946
+  URL: http://adsabs.harvard.edu/abs/2016MNRAS.456.3774W
+  eprint: http://arxiv.org/abs/1512.04539
+Repository: https://github.com/rwesson/ALFA.git
+Repository-Browse: https://github.com/rwesson/ALFA
