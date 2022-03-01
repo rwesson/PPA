@@ -1,0 +1,15 @@
+ASCL-Id: 1807.023
+Bug-Database: https://github.com/damocles-code/damocles/issues
+Bug-Submit: https://github.com/damocles-code/damocles/issues
+Reference:
+  Author: Bevan, Antonia; Barlow, M. J.
+  Title: "Modelling supernova line profile asymmetries to determine ejecta dust masses: SN 1987A from days 714 to 3604"
+  Journal: Monthly Notices of the Royal Astronomical Society
+  Year: 2016
+  Volume: 456
+  Pages: 1269
+  DOI: 10.1093/mnras/stv2651
+  URL: https://ui.adsabs.harvard.edu/abs/2016MNRAS.456.1269B
+  eprint: https://arxiv.org/abs/1509.00858
+Repository: https://github.com/damocles-code/damocles.git
+Repository-Browse: https://github.com/damocles-code/damocles
