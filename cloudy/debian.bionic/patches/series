@@ -1,0 +1,4 @@
+addtoplevelmakefile.patch
+path.h.patch
+man.patch
+fixoriginalmakefile.patch

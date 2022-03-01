@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --no-parallel
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod a+x debian/neat/usr/share/neat/plot.sh

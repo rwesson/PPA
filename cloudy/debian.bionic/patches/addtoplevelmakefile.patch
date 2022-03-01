@@ -1,0 +1,24 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: create make file in top level directory, which calls the makefile in the source directory
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,19 @@
++main:
++	cd source/ && ${MAKE}
++
++install:
++	test -e ${DESTDIR}/usr/bin || mkdir -p ${DESTDIR}/usr/bin
++	test -e ${DESTDIR}/usr/share/cloudy|| mkdir -p ${DESTDIR}/usr/share/cloudy
++	test -e ${DESTDIR}/usr/share/doc/cloudy || mkdir -p ${DESTDIR}/usr/share/doc/cloudy
++	test -e ${DESTDIR}/usr/share/man/man1 || mkdir -p ${DESTDIR}/usr/share/man/man1
++	cp -a data docs tsuite ${DESTDIR}/usr/share/cloudy/
++	cp -a docs ${DESTDIR}/usr/share/doc/cloudy
++	install source/cloudy ${DESTDIR}/usr/bin
++	install -m 644 man/cloudy.1 ${DESTDIR}/usr/share/man/man1
++	gzip -f ${DESTDIR}/usr/share/man/man1/cloudy.1
++
++clean:
++	cd source && ${MAKE} clean distclean
++
++test:
++	cd source && ${MAKE} test

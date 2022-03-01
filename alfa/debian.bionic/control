@@ -1,0 +1,21 @@
+Source: alfa
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper-compat (= 12),
+               gfortran,
+               libcfitsio-dev
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/rwesson/ALFA
+
+Package: alfa
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Automated Line Fitting Algorithm
+ ALFA measures fluxes in emission line spectra, such as those of planetary
+ nebulae and HII regions, using a genetic algorithm to rapidly optimise fits
+ to large numbers of lines simultaneously.  It can subtract night sky emission
+ lines before fitting the nebular lines if necessary.  It can read plain text
+ files containing 1D spectral data, or FITS files containing 1D, 2D or 3D
+ datasets.

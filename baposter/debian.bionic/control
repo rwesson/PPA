@@ -1,0 +1,16 @@
+Source: baposter
+Section: tex
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 10.0.0), tex-common
+Build-Depends-Indep: texlive-base-bin, texlive-latex-base, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra
+Standards-Version: 4.3.0
+Homepage: https://github.com/anriseth/baposter
+
+Package: latex-baposter
+Architecture: all
+Depends: texlive-base-bin, texlive-latex-base, texlive-latex-recommended, texlive-fonts-recommended, ${misc:Depends}
+Description: poster class for pdflatex
+ A LaTeX class to produce posters with a grid based layout. It comes with a
+ number of combinable styles and is easy to extend, as all the graphics is
+ based on pgf.

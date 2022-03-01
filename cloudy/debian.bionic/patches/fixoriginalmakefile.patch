@@ -1,0 +1,99 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: allow variables to propagate, add install rule, and rm .exe extension from files
+--- a/source/Makefile
++++ b/source/Makefile
+@@ -18,9 +18,10 @@
+ NO_TRAP_FLAGS =
+ # this is intended for supplying extra command line parameters, e.g. extra -D flags
+ EXTRA =
+-SRCDIR = .
++SRCDIR = ./
+ OBJEXT = o
+ LIBEXT = a
++CLOUDY_DATA_PATH=${DESTDIR}/usr/share/cloudy/data
+ 
+ .PHONY: all default data debug testclean clean distclean debug-test test valgrind-test depend echo-cxx echo-cxxflags
+ 
+@@ -169,7 +170,7 @@
+ endif
+ 
+ # Makefile.targets can override or add to the DEFAULT variable.
+-DEFAULT = cloudy.exe data md5datafile.exe
++DEFAULT = cloudy data md5datafile
+ 
+ # include additional targets from file if one exists (or carry on without
+ # worrying if it doesn't)
+@@ -179,8 +180,8 @@
+ 
+ default: $(DEFAULT)
+ 
+-cloudy.exe: ${preobjects} maincl.${OBJEXT} libcloudy.${LIBEXT}
+-	${CXX} ${LDFLAGS} -o cloudy.exe maincl.${OBJEXT} -L. -lcloudy ${LDLIBS}
++cloudy: ${preobjects} maincl.${OBJEXT} libcloudy.${LIBEXT}
++	${CXX} ${LDFLAGS} -o cloudy maincl.${OBJEXT} -L. -lcloudy ${LDLIBS}
+ 
+ libcloudy.${LIBEXT}: ${libobjects}
+ 	ar cr libcloudy.${LIBEXT} $^
+@@ -189,29 +190,29 @@
+ data:
+ 	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
+ 
+-md5datafile.exe: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
+-	${CXX} ${LDFLAGS} -o md5datafile.exe md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
++md5datafile: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
++	${CXX} ${LDFLAGS} -o md5datafile md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
+ 
+ testclean:
+ 	rm -f Test*.${OBJEXT}
+ 	rm -f Test*.d
+-	rm -f runtests.exe
++	rm -f runtests
+ 
+ clean: testclean
+-	rm -f *.${OBJEXT}
+-	rm -f *.d
+-	rm -f *.h.gch
+-	rm -rf SunWS_cache
+-	rm -rf cloudy.exe.dSYM
+-	rm -f libcloudy.${LIBEXT}
++	rm -f ${SRCDIR}/*.${OBJEXT}
++	rm -f ${SRCDIR}/*.d
++	rm -f ${SRCDIR}/*.h.gch
++	rm -rf ${SRCDIR}/SunWS_cache
++	rm -rf ${SRCDIR}/cloudy.dSYM
++	rm -f ${SRCDIR}/libcloudy.${LIBEXT}
+ 	rm -f $(DEFAULT)
+-	rm -rf tmp_cloudyconfig.*
++	rm -rf ${SRCDIR}/tmp_cloudyconfig.*
+ 	rm -f cloudyconfig.h
+ 
+ distclean: clean
+ 	rm -f ${SRCDIR}/Makefile.conf
+-	rm -rf lib
+-	rm -rf include
++	rm -rf ${SRCDIR}/lib
++	rm -rf ${SRCDIR}/include
+ 	cd ${SRCDIR}/../library/UnitTest++ && $(MAKE) clean
+ 	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) clean
+ 
+@@ -252,15 +253,15 @@
+ 
+ debug-test: test
+ 
+-test: runtests.exe
+-	./runtests.exe
++test: runtests
++	CLOUDY_DATA_PATH=../data ./runtests
+ 
+-valgrind-test: runtests.exe
+-	valgrind --leak-check=full --track-fds=yes ./runtests.exe
++valgrind-test: runtests
++	valgrind --leak-check=full --track-fds=yes ./runtests
+ 
+ TESTLIBS := -L. -lcloudy -Llib/UnitTest++ -lUnitTest++
+ 
+-runtests.exe: lib/UnitTest++/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
++runtests: lib/UnitTest++/libUnitTest++.${LIBEXT} libcloudy.${LIBEXT} ${testobjects}
+ 	${CXX} ${CXXFLAGS} -${OBJEXT} $@ ${filter-out %.${LIBEXT}, $^} ${LDFLAGS} ${TESTLIBS} ${LDLIBS}
+ 
+ lib/UnitTest++/libUnitTest++.${LIBEXT}: lib/UnitTest++/README
