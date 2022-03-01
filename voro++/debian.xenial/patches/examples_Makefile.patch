@@ -1,0 +1,105 @@
+--- a/examples/Makefile
++++ b/examples/Makefile
+@@ -4,6 +4,30 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
++# from config.mk:
++
++# C++ compiler
++export CXX=g++
++
++# Flags for the C++ compiler
++export CFLAGS += -fpic -Wall -ansi -pedantic -O3 $(CPPFLAGS)
++
++# Relative include and library paths for compilation of the examples
++export E_INC=-I/usr/include/voro++
++export E_LIB=-L/usr/lib/
++
++# Installation directory
++export PREFIX=/usr
++
++# Install command
++export INSTALL=install
++
++# Flags for install command for executable
++export IFLAGS_EXEC=-m 0755
++
++# Flags for install command for non-executable files
++export IFLAGS=-m 0644
++
+ # Makefile rules
+ all: ex_basic ex_walls ex_custom ex_extra ex_degenerate ex_interface
+ 
+--- a/examples/basic/Makefile
++++ b/examples/basic/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=single_cell platonic random_points import
+ 
+--- a/examples/custom/Makefile
++++ b/examples/custom/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=cell_statistics custom_output radical
+ 
+--- a/examples/degenerate/Makefile
++++ b/examples/degenerate/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=degenerate degenerate2
+ 
+--- a/examples/extra/Makefile
++++ b/examples/extra/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=box_cut cut_region superellipsoid irregular
+ 
+--- a/examples/interface/Makefile
++++ b/examples/interface/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=loops polygons odd_even find_voro_cell
+ 
+--- a/examples/walls/Makefile
++++ b/examples/walls/Makefile
+@@ -4,9 +4,6 @@
+ # Email  : chr@alum.mit.edu
+ # Date   : August 30th 2011
+ 
+-# Load the common configuration file
+-include ../../config.mk
+-
+ # List of executables
+ EXECUTABLES=cylinder tetrahedron frustum torus
+ 

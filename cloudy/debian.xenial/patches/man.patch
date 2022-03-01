@@ -1,0 +1,46 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: add man page
+--- /dev/null
++++ b/man/cloudy.1
+@@ -0,0 +1,41 @@
++.\" Manpage for cloudy.
++.TH cloudy 1 "6 Jun 2016" "C13.03" "cloudy man page"
++.SH NAME
++cloudy \- photoionization simulations for the discriminating astrophysicist since 1978
++.SH SYNOPSIS
++cloudy
++.SH DESCRIPTION
++\fBcloudy\fR is a spectral synthesis code designed to simulate conditions in interstellar matter under a broad range of conditions.  Full documentation is in /usr/share/doc/cloudy and on the cloudy web page at http://www.nublado.org
++.SH OPTIONS
++Supported flags are:
++.PP
++\fB\-p\fR example
++.IP
++Cloudy reads the input from the file example.in
++and writes the output to the file example.out.
++Additionally, all file names in SAVE commands are
++prepended with the string "example", e.g. the
++output of SAVE DR ".dr" will be in example.dr.
++.PP
++\fB\-r\fR example
++.IP
++This does the same as the \fB\-p\fR switch, except that
++the names used in SAVE commands are not altered.
++.PP
++\fB\-g\fR example
++.IP
++This switch is used internally in MPI grid runs.
++Normal users should not use this switch.
++.PP
++\fB\-a\fR
++.IP
++This switch is used in debugging. It causes the
++code to crash rather than exit gracefully after
++a failed assert. This flag is deprecated.
++.PP
++\fB\-h\fR
++.IP
++Print this message.
++.PP
++.SH AUTHOR
++Gary Ferland

@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/mocassin.?(\d\S*)\.tar\.gz/mocassin-$1\.tar\.gz/ \
+  https://github.com/rwesson/mocassin/tags .*/mocassin.?(\d\S*)\.tar\.gz

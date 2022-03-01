@@ -1,0 +1,21 @@
+Author: Roger Wesson <rw@nebulousresearch.org>
+Description: allows propagation of flags, sets prefix to /usr, adds -fpic for compilation of shared library
+--- a/config.mk
++++ b/config.mk
+@@ -11,14 +11,14 @@
+ CXX=g++
+ 
+ # Flags for the C++ compiler
+-CFLAGS=-Wall -ansi -pedantic -O3
++CFLAGS += -fpic -Wall -ansi -pedantic -O3 $(CPPFLAGS)
+ 
+ # Relative include and library paths for compilation of the examples
+ E_INC=-I../../src
+ E_LIB=-L../../src
+ 
+ # Installation directory
+-PREFIX=/usr/local
++PREFIX=/usr
+ 
+ # Install command
+ INSTALL=install

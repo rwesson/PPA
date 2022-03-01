@@ -1,0 +1,3 @@
+version=3
+opts="dversionmangle=s/\+dfsg\d*$//,repacksuffix=+dfsg1" \
+  http://math.lbl.gov/voro++/download/ .*/voro\+\+\-(\d.\d.\d).tar.gz

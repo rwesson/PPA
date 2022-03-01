@@ -1,0 +1,11 @@
+baposter (1.0.15-1~ppa1~xenial1ubuntu2) xenial; urgency=medium
+
+  * changed file location
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 16:38:04 +0100
+
+baposter (1.0.15-1~ppa1~xenial1ubuntu1) xenial; urgency=medium
+
+   * Initial version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 15:33:16 +0100

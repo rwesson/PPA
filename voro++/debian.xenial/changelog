@@ -1,0 +1,23 @@
+voro++ (0.4.6-7ppa1~xenial1ubuntu2) xenial; urgency=medium
+
+  * used pkg-kde-tools
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sun, 29 Jan 2017 11:49:47 +0000
+
+voro++ (0.4.6-1ppa1~xenial1ubuntu7) xenial; urgency=medium
+
+  * fixed propagation of variables
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
+
+voro++ (0.4.6-1ppa1~xenial1ubuntu6) xenial; urgency=medium
+
+  * patched examples makefiles to compile out of the box
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
+
+voro++ (0.4.6-1ppa1~xenial1ubuntu5) xenial; urgency=medium
+
+  * packaging improvements
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 18:41:11 +0000
