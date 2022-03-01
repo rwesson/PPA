@@ -1,6 +1,6 @@
 !*/
 */*
-!*/debian/
+!*/debian.*
 *.xz
 *.changes
 *.gz
