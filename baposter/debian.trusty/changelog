@@ -1,0 +1,11 @@
+baposter (1.0.15-1~ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * changed file location
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 16:38:04 +0100
+
+baposter (1.0.15-1~ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+   * Initial version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 01 May 2019 15:33:16 +0100

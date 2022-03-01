@@ -1,0 +1,24 @@
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -17,12 +17,18 @@
+ 		$(FC) $(OBJECTS) -o bin/bhmie
+ 
+ install:	bin/bhmie
+-		mkdir -p @prefix@/bin/
+-		cp bin/bhmie @prefix@/bin/
++		mkdir -p $(DESTDIR)@prefix@/bin/
++		mkdir -p $(DESTDIR)@prefix@/share/bhmie
++		cp bin/bhmie $(DESTDIR)@prefix@/bin/
++		cp -a examples/ ${DESTDIR}@prefix@/share/bhmie/
+ 
+-clean:;		rm -r src/modules/*.mod bin dist
++clean:
++		-rm -rf src/modules/*.mod bin dist Makefile config.log config.status
+ 
+ sdist:		$(TAR_OBJECTS)
+ 		mkdir -p dist/bhmie_$(VERSION)
+ 		cp -RP $(TAR_OBJECTS) dist/bhmie_$(VERSION)/
+ 		cd dist ; tar czvf bhmie_$(VERSION).tgz bhmie_$(VERSION)
++
++uninstall:
++		rm -f $(DESTDIR)@prefix@/bin/bhmie

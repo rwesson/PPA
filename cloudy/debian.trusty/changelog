@@ -1,0 +1,11 @@
+cloudy (17.01-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * new upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 31 Oct 2018 14:44:01 +0000
+
+cloudy (13.04-1ppa1~trusty1) trusty; urgency=low
+
+  * new upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 11:39:43 +0100

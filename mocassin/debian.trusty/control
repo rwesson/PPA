@@ -1,0 +1,63 @@
+Source: mocassin
+Section: science
+Priority: optional
+Maintainer: Roger Wesson <rw@nebulousresearch.org>
+Build-Depends: debhelper (>= 9.0.0),
+               gfortran,
+               libmpich-dev
+Standards-Version: 3.9.8
+Homepage: http://www.3d-mocassin.net
+
+Package: mocassin
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, mocassin-data
+Suggests: mocassin-benchmarks, mocassin-examples
+Description: MOnte CArlo SimulationS of Ionised Nebulae
+ mocassin is a fully 3D or 2D photoionisation and dust radiative transfer code
+ which employs a Monte Carlo approach to the transfer of radiation through
+ media of arbitrary geometry and density distribution. It was originally
+ developed for the modelling of photoionised regions like HII regions and
+ planetary nebulae and has since expanded and been applied to a variety of
+ astrophysical problems, including modelling clumpy dusty supernova envelopes,
+ star forming galaxies, protoplanetary disks and inner shell fluorence emission
+ in the photospheres of stars and disk atmospheres. The code can deal with
+ arbitrary Cartesian grids of variable resolution, it has successfully been
+ used to model complex density fields from SPH calculations and can deal with
+ ionising radiation extending from Lyman edge to the X-ray. The dust and gas
+ microphysics is fully coupled both in the radiation transfer and in the
+ thermal balance.
+
+Package: mocassin-data
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Suggests: mocassin, mocassin-benchmarks, mocassin-examples
+Description: atomic and optical data for the photoionisation code MOCASSIN
+ mocassin is a fully 3D or 2D photoionisation and dust radiative transfer code
+ which employs a Monte Carlo approach to the transfer of radiation through
+ media of arbitrary geometry and density distribution. This package contains
+ the atomic and optical data necessary to run simulations.
+
+Package: mocassin-benchmarks
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Suggests: mocassin
+Description: benchmarks for the photoionisation code MOCASSIN
+ mocassin is a fully 3D or 2D photoionisation and dust radiative transfer code
+ which employs a Monte Carlo approach to the transfer of radiation through
+ media of arbitrary geometry and density distribution. This package contains
+ benchmark problems which can be run and compared with the outputs of other
+ photoionisation codes.
+
+Package: mocassin-examples
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Suggests: mocassin
+Description: Examples for the photoionisation code MOCASSIN
+ mocassin is a fully 3D or 2D photoionisation and dust radiative transfer code
+ which employs a Monte Carlo approach to the transfer of radiation through
+ media of arbitrary geometry and density distribution. This package contains
+ example input for files for some of the complex simulations that MOCASSIN is
+ capable of.

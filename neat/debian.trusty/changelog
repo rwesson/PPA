@@ -1,0 +1,226 @@
+neat (2.3.41-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * deallocate arrays at end of calculations
+  * fixed output, results files were not written out to the right place when --output-dir was specified
+  * fixed out-of-bounds errors caused by extinction routine going beyond the available atomic data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 26 Feb 2021 13:54:59 +0000
+
+neat (2.3.33-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * removed hard coded Balmer line ratios in extinction calculation
+  * fixed a bug which meant invalid FITS files were sometimes created
+  * --output-dir was previously only used when writing FITS files, now used for text output as well
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 25 Feb 2021 18:02:14 +0000
+
+neat (2.3.25-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * rearranged QC output for consistency with files produced by ALFA
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 26 Nov 2020 17:12:38 +0000
+
+neat (2.3.20-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * included recombination line reliability flag in FITS output
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 Nov 2020 18:33:48 +0000
+
+neat (2.3.18-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * Error codes returned if analysis is not completed
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 29 Oct 2020 07:00:18 +0000
+
+neat (2.3.16-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * Adjusted some CFITSIO calls to avoid gfortran-10 errors
+  * fixed line finder routine which had been broken by recent file format changes
+  * ensured consistent field widths in utilities/complete_line_list
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 18 Sep 2020 13:08:37 +0100
+
+neat (2.3.12-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * atomic data included in FITS output tables
+  * added calculation of Te from He I 7281/6678 ratio
+  * improved code efficiency for minor speedup
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 11 Jun 2020 13:35:16 +0100
+
+neat (2.3-1ppa1~trusty1ubuntu3) trusty; urgency=medium
+
+  * fixed cfitsio package name in dependency
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 17:30:59 +0100
+
+neat (2.3-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * build now depends on cfitsio
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 16:02:27 +0100
+
+neat (2.3-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * implemented FITS reading and writing. FITS files produced by ALFA can be read in, and the results will be added to the file. Text output is deprecated and will be removed in a future release.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 15:48:57 +0100
+
+neat (2.2.40-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * last update inadvertently did nothing. this one genuinely fixes out of bounds error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 19:58:01 +0100
+
+neat (2.2.39-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed an out of bounds error
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 17:50:07 +0100
+
+neat (2.2.38-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * reverted to older atomic data files for three species
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 19 Sep 2019 10:38:07 +0100
+
+neat (2.2.37-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated collisional atomic data to CHIANTI 9.0
+  * added option to use classical icf(N) with DI14
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 18 Sep 2019 00:00:54 +0100
+
+neat (2.2.34-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed formatting of linelist output files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 14 Mar 2019 17:55:37 +0000
+
+neat (2.2.33-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * replaced OII atomic data from Liu et al 1995 with newer calculations from Storey et al. 2017
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sun, 03 Mar 2019 17:50:41 +0000
+
+neat (2.2.20-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed check for comment lines which prevented output from alfa being directly read in
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 15 Feb 2019 12:38:43 +0000
+
+neat (2.2.17-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * coding efficiencies
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 22 Jan 2019 18:11:40 +0000
+
+neat (2.2.15-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * recombination line abundances are flagged if potentially unreliable
+  * option to skip confirmation of line IDs added
+  * fixed bug affecting calcalation of recombination contribution to CELs
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 15 Jan 2019 17:23:07 +0000
+
+neat (2.2.0-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * fixed minor bugs related to variable initialisation
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Aug 2018 17:22:59 +0100
+
+neat (2.1.28-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * recombination contribution to collisionally excited lines can be subtracted if desired
+  * fixed a bug which set line fluxes to zero if uncertainty was zero
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 08 Jun 2018 17:43:56 +0100
+
+neat (2.1.24-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated OII diagnostics to use Storey et al 2017 data
+  * improved output files, diagnostic ratios now specified
+  * extrapolated SIII atomic data to higher temperatures
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 18:37:27 +0100
+
+neat (2.1.13-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed a bug which caused diagnostics close to their upper and lower limits to be wrongly given zero weighting when uncertainties were calculated.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 14 Dec 2017 05:39:40 +0000
+
+neat (2.1.12-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * extrapolated atomic data for SIII to 35000K
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 01 Dec 2017 16:08:08 +0000
+
+neat (2.1.10-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * fixed some array out of bounds errors affecting Smits He data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 21 Aug 2017 04:55:19 +0100
+
+neat (2.1.08-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * faster calculation of recombination line abundances and full implementation of weighting scheme
+  * default weighting for RL multiplets is now by their coadded intensity
+  * fixed bug which prevented Smits 1996 helium data from being used
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 26 Jul 2017 10:46:13 +0100
+
+neat (2.1.00-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * 2.0.76 -> 2.1.0
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 05 Jun 2017 17:37:03 +0100
+
+neat (2.0.76-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * fixed ICFs for recombination lines.  Abundances were correct but the actual ICF used was not written out properly
+  * changed zone of Cl IV and S IV from high to medium, IP<40eV for both
+  * improved output formatting
+  * config file can be partially specified, default values used for anything not specified
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 31 May 2017 17:13:24 +0100
+
+neat (2.0.72-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * added Cl+ and Cl3+ abundances to calculations
+  * improved formatting, figures rounded to 3sf, better checking for close to equal uncertainties
+  * added some missing line transition data, fixed some wavelengths
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 24 May 2017 14:45:10 +0100
+
+neat (2.0.64-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * bugfix, Equation 29 from DI14 for Cl/H was wrong
+  * excluded densities below lower limit from averaging for Balmer and Paschen dec densities
+  * improved formatting of tables
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 May 2017 12:50:43 +0100
+
+neat (2.0.56-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * Fixed bug which meant that uncertainties of lognormal distributions were wrongly reported
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 02 Mar 2017 16:43:21 +0000
+
+neat (2.0.55-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * set PREFIX depending on OS
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 14:20:48 +0000
+
+neat (2.00-2ppa1~trusty1) trusty; urgency=medium
+
+  * patched to make build reproducible
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 11 Nov 2016 11:38:46 +0000
+
+neat (2.00-1ppa1~trusty1) trusty; urgency=medium
+
+  * updated build dependencies, standards version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 09 Nov 2016 14:36:06 +0000

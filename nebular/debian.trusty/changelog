@@ -1,0 +1,23 @@
+nebular (1.2-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * New upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 13:57:15 +0000
+
+nebular (1.0-7ppa1~trusty1) trusty; urgency=medium
+
+  * fixed dependency
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 18 Aug 2016 11:37:29 +0100
+
+nebular (1.0-6ppa1~trusty1) trusty; urgency=low
+
+  * installed data
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 16 Aug 2016 07:34:20 +0100
+
+nebular (1.0-5ppa1~trusty1) trusty; urgency=low
+
+  * Fixed package.
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 15 Aug 2016 11:03:47 +0100

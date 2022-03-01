@@ -1,0 +1,17 @@
+voro++ (0.4.6-7ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * used pkg-kde-tools
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
+
+voro++ (0.4.6-1ppa1~trusty1ubuntu6) trusty; urgency=medium
+
+  * patched examples makefiles to compile out of the box
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
+
+voro++ (0.4.6-1ppa1~trusty1ubuntu5) trusty; urgency=medium
+
+  * packaging improvements
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 12 Jan 2017 18:41:11 +0000

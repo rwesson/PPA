@@ -1,6 +1,10 @@
 !*/
 */*
+<<<<<<< HEAD
 !*/debian.*
+=======
+!*/debian/
+>>>>>>> trusty
 *.xz
 *.changes
 *.gz
@@ -9,4 +13,7 @@
 *.build
 *.dsc
 *.upload
+<<<<<<< HEAD
 *buildinfo
+=======
+>>>>>>> trusty
