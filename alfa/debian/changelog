@@ -1,3 +1,20 @@
+alfa (2.2-1ppa1~bionic1ubuntu2) bionic; urgency=medium
+
+  * fixed dependency for bionic
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 07 May 2022 19:55:21 +0100
+
+alfa (2.2-1ppa1~bionic1ubuntu1) bionic; urgency=medium
+
+  * removed HeII Pickering lines from default line list, added new line list
+    file for cases where they are present and resolved
+  * error codes given in output messages when fitting fails
+  * fixed some minor memory leaks
+  * fixed bug in initialisation of line fluxes which caused fitting problems
+    for some spectra in units of erg/cm2/s/A
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Sat, 07 May 2022 17:12:50 +0100
+
 alfa (2.1.1-1ppa1~bionic1ubuntu1) bionic; urgency=medium
 
   * initialised line fluxes based on the data instead of assuming Hbeta~100
