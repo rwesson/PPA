@@ -4,9 +4,12 @@ Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Build-Depends: debhelper (>= 9.0.0),
                gfortran,
-               libcfitsio3-dev
-Standards-Version: 3.9.8
+               libcfitsio3-dev | libcfitsio-dev
+Standards-Version: 4.5.1
 Homepage: https://github.com/rwesson/ALFA
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/rwesson/ALFA.git
+Vcs-Browser: https://github.com/rwesson/ALFA
 
 Package: alfa
 Architecture: any
