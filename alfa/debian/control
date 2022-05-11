@@ -7,6 +7,9 @@ Build-Depends: debhelper (>= 9.0.0),
                libcfitsio-dev
 Standards-Version: 3.9.8
 Homepage: https://github.com/rwesson/ALFA
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/rwesson/ALFA.git
+Vcs-Browser: https://github.com/rwesson/ALFA
 
 Package: alfa
 Architecture: any
