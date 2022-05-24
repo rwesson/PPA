@@ -1,0 +1,17 @@
+ASCL-Id: 9901.001
+Bug-Database: https://gitlab.nublado.org/cloudy/cloudy/-/issues
+Bug-Submit: https://gitlab.nublado.org/cloudy/cloudy/-/issues/new
+Contact: gary@g.uky.edu
+Name: cloudy
+Reference:
+  Author: Ferland G.J., et al.
+  Title: "The 2017 Release Cloudy"
+  Journal: Revista Mexicana de Astronomía y Astrofísica
+  Year: 2017
+  Volume: 53
+  Pages: 385-438
+  DOI: 
+  URL: https://ui.adsabs.harvard.edu/abs/2017RMxAA..53..385F
+  eprint: https://arxiv.org/abs/1705.10877
+Repository: https://gitlab.nublado.org/cloudy/cloudy
+Repository-Browse: https://gitlab.nublado.org/cloudy/cloudy
