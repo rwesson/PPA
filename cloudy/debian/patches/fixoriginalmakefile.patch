@@ -2,10 +2,10 @@ Author: Roger Wesson <rw@nebulousresearch.org>
 Description: allow variables to propagate, add install rule, and rm .exe extension from files
 --- a/source/Makefile
 +++ b/source/Makefile
-@@ -18,9 +18,10 @@
+@@ -20,9 +20,10 @@
  NO_TRAP_FLAGS =
  # this is intended for supplying extra command line parameters, e.g. extra -D flags
- EXTRA =
+ EXTRA = 
 -SRCDIR = .
 +SRCDIR = ./
  OBJEXT = o
@@ -14,16 +14,16 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  .PHONY: all default data debug testclean clean distclean debug-test test valgrind-test depend echo-cxx echo-cxxflags
  
-@@ -169,7 +170,7 @@
+@@ -179,7 +180,7 @@
  endif
  
  # Makefile.targets can override or add to the DEFAULT variable.
--DEFAULT = cloudy.exe data md5datafile.exe
-+DEFAULT = cloudy data md5datafile
+-DEFAULT = cloudy.exe data vh128sum.exe
++DEFAULT = cloudy data vh128sum
  
  # include additional targets from file if one exists (or carry on without
  # worrying if it doesn't)
-@@ -179,8 +180,8 @@
+@@ -189,8 +190,8 @@
  
  default: $(DEFAULT)
  
@@ -34,20 +34,23 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  libcloudy.${LIBEXT}: ${libobjects}
  	ar cr libcloudy.${LIBEXT} $^
-@@ -189,29 +190,29 @@
+@@ -199,32 +200,32 @@
  data:
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
  
--md5datafile.exe: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
--	${CXX} ${LDFLAGS} -o md5datafile.exe md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
-+md5datafile: ${preobjects} md5datafile.${OBJEXT} libcloudy.${LIBEXT}
-+	${CXX} ${LDFLAGS} -o md5datafile md5datafile.${OBJEXT} -L. -lcloudy ${LDLIBS}
+-vh128sum.exe: vh128sum.${OBJEXT} vectorhash.${OBJEXT}
+-	${CXX} ${LDFLAGS} -o vh128sum.exe vh128sum.${OBJEXT} vectorhash.${OBJEXT}
++vh128sum: vh128sum.${OBJEXT} vectorhash.${OBJEXT}
++	${CXX} ${LDFLAGS} -o vh128sum vh128sum.${OBJEXT} vectorhash.${OBJEXT}
  
  testclean:
  	rm -f Test*.${OBJEXT}
  	rm -f Test*.d
 -	rm -f runtests.exe
+-	rm -rf runtests.exe.dSYM
 +	rm -f runtests
++	rm -rf runtests.dSYM
+ 	rm -f temp.??????
  
  clean: testclean
 -	rm -f *.${OBJEXT}
@@ -55,12 +58,14 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
 -	rm -f *.h.gch
 -	rm -rf SunWS_cache
 -	rm -rf cloudy.exe.dSYM
+-	rm -rf vh128sum.exe.dSYM
 -	rm -f libcloudy.${LIBEXT}
 +	rm -f ${SRCDIR}/*.${OBJEXT}
 +	rm -f ${SRCDIR}/*.d
 +	rm -f ${SRCDIR}/*.h.gch
 +	rm -rf ${SRCDIR}/SunWS_cache
 +	rm -rf ${SRCDIR}/cloudy.dSYM
++	rm -rf ${SRCDIR}/vh128sum.dSYM
 +	rm -f ${SRCDIR}/libcloudy.${LIBEXT}
  	rm -f $(DEFAULT)
 -	rm -rf tmp_cloudyconfig.*
@@ -76,14 +81,14 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  	cd ${SRCDIR}/../library/UnitTest++ && $(MAKE) clean
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) clean
  
-@@ -252,15 +253,15 @@
+@@ -265,15 +266,15 @@
  
  debug-test: test
  
 -test: runtests.exe
 -	./runtests.exe
 +test: runtests
-+	CLOUDY_DATA_PATH=../data ./runtests
++	./runtests
  
 -valgrind-test: runtests.exe
 -	valgrind --leak-check=full --track-fds=yes ./runtests.exe
