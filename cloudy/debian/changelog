@@ -1,3 +1,9 @@
+cloudy (17.03-1ppa1~focal1ubuntu1) focal; urgency=medium
+
+  * new upstream version
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Tue, 24 May 2022 07:48:24 +0100
+
 cloudy (17.01-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * new upstream version
