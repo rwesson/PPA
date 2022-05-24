@@ -9,6 +9,7 @@ Build-Depends: debhelper-compat (= 12),
                libstdc++6 (>= 4.4.0)
 Standards-Version: 4.6.1
 Homepage: http://www.nublado.org
+Rules-Requires-Root: no
 
 Package: cloudy
 Architecture: any
