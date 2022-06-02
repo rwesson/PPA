@@ -2,7 +2,17 @@ Author: Roger Wesson <rw@nebulousresearch.org>
 Description: allow variables to propagate, add install rule, and rm .exe extension from files
 --- a/source/Makefile
 +++ b/source/Makefile
-@@ -20,9 +20,10 @@
+@@ -3,7 +3,8 @@
+ 
+ # on modern Mac Xcode and FreeBSD releases, g++ is disappearing in favor of clang++
+ # so make sure we have a fallback in case g++ is missing...
+-DEFCXX := ${shell which g++ 2> /dev/null}
++#DEFCXX := ${shell which g++ 2> /dev/null}
++DEFCXX := g++-9
+ ifeq ($(DEFCXX),)
+   DEFCXX := ${shell which clang++ 2> /dev/null}
+ endif
+@@ -20,9 +21,10 @@
  NO_TRAP_FLAGS =
  # this is intended for supplying extra command line parameters, e.g. extra -D flags
  EXTRA = 
@@ -14,7 +24,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  .PHONY: all default data debug testclean clean distclean debug-test test valgrind-test depend echo-cxx echo-cxxflags
  
-@@ -179,7 +180,7 @@
+@@ -179,7 +181,7 @@
  endif
  
  # Makefile.targets can override or add to the DEFAULT variable.
@@ -23,7 +33,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  # include additional targets from file if one exists (or carry on without
  # worrying if it doesn't)
-@@ -189,8 +190,8 @@
+@@ -189,8 +191,8 @@
  
  default: $(DEFAULT)
  
@@ -34,7 +44,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  
  libcloudy.${LIBEXT}: ${libobjects}
  	ar cr libcloudy.${LIBEXT} $^
-@@ -199,32 +200,32 @@
+@@ -199,32 +201,32 @@
  data:
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE)
  
@@ -81,7 +91,7 @@ Description: allow variables to propagate, add install rule, and rm .exe extensi
  	cd ${SRCDIR}/../library/UnitTest++ && $(MAKE) clean
  	cd ${SRCDIR}/../data/cdms+jpl && $(MAKE) clean
  
-@@ -265,15 +266,15 @@
+@@ -265,15 +267,15 @@
  
  debug-test: test
  
