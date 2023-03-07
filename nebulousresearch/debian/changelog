@@ -1,22 +1,22 @@
-nebulousresearch (1.0-4ppa1~focal1ubuntu1) focal; urgency=medium
+nebulousresearch (1.0-4ppa1~jammy1ubuntu1) jammy; urgency=medium
 
   * added bhmie, nebular and mocassin benchmarks and examples
 
  -- Roger Wesson <rw@nebulousresearch.org>  Fri, 19 Aug 2016 05:55:21 +0100
 
-nebulousresearch (1.0-3ppa1~focal1ubuntu2) focal; urgency=medium
+nebulousresearch (1.0-3ppa1~jammy1ubuntu2) jammy; urgency=medium
 
   * added voro++
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 02 Aug 2016 09:09:17 +0100
 
-nebulousresearch (1.0-2ppa1~focal1ubuntu1) focal; urgency=medium
+nebulousresearch (1.0-2ppa1~jammy1ubuntu1) jammy; urgency=medium
 
   * added cloudy-data to dependency so that it gets uninstalled
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 30 Jul 2016 09:21:37 +0100
 
-nebulousresearch (1.0) focal; urgency=low
+nebulousresearch (1.0) jammy; urgency=low
 
   * First version
 

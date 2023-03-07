@@ -1,10 +1,10 @@
-nebulousresearch-backgrounds (1.0-1ppa1~eoan1ubuntu1) eoan; urgency=medium
+nebulousresearch-backgrounds (1.0-1ppa1~jammy1ubuntu1) jammy; urgency=medium
 
-  * package for eoan
+  * package for jammy
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:09:57 +0100
 
-nebulousresearch-backgrounds (1.0-1ppa1~eoan1) eoan; urgency=low
+nebulousresearch-backgrounds (1.0-1ppa1~jammy1) jammy; urgency=low
 
   * Initial release.
 

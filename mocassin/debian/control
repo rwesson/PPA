@@ -2,10 +2,10 @@ Source: mocassin
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 10.0.0),
+Build-Depends: debhelper-compat (= 12),
                gfortran,
                libmpich-dev
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2
 Homepage: http://www.3d-mocassin.net
 
 Package: mocassin

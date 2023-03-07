@@ -1,0 +1,17 @@
+ASCL-Id: 1110.010
+Bug-Database: https://github.com/rwesson/mocassin/issues
+Bug-Submit: https://github.com/rwesson/mocassin/issues/new
+Contact: ercolano@usm.uni-muenchen.de
+Name: mocassin
+Reference:
+  Author: Ercolano, B. and Barlow, M.J. and Storey, P.J. and Liu, X.-W.
+  Title: "MOCASSIN: a fully three-dimensional Monte Carlo photoionization code"
+  Journal: Monthly Notices of the Royal Astronomical Society
+  Year: 2003
+  Volume: 340
+  Pages: 1136-1152
+  DOI: 10.1046/j.1365-8711.2003.06371.x
+  URL: http://adsabs.harvard.edu/abs/2003MNRAS.340.1136E
+  eprint: http://arxiv.org/abs/astro-ph/0209378
+Repository: https://github.com/rwesson/mocassin.git
+Repository-Browse: https://github.com/rwesson/mocassin

@@ -7,7 +7,9 @@ packages do depend on are actually installed.
 
 The special dependencies used in this package are:
 
-Depends: alfa, cloudy, intrat, mocassin, neat
+Depends: alfa, bhmie, cloudy, cloudy-data, intrat, mocassin,
+         mocassin-data, mocassin-benchmarks, mocassin-examples,
+         neat, nebular, voro++
 
 
 Please note that this is a crude hack and if thoughtlessly used

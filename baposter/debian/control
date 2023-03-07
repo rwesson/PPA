@@ -2,9 +2,9 @@ Source: baposter
 Section: tex
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper (>= 10.0.0), tex-common
+Build-Depends: debhelper-compat (= 12), tex-common
 Build-Depends-Indep: texlive-base-bin, texlive-latex-base, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra
-Standards-Version: 4.3.0
+Standards-Version: 4.6.2
 Homepage: https://github.com/anriseth/baposter
 
 Package: latex-baposter
