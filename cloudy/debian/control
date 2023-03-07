@@ -3,12 +3,11 @@ Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Build-Depends: debhelper-compat (= 12),
-               g++-9,
+               g++,
                libc6 (>= 2.14),
                libgcc1 (>= 1:4.1.1),
-               libstdc++6 (>= 4.4.0),
-               binutils
-Standards-Version: 4.6.1
+               libstdc++6 (>= 4.4.0)
+Standards-Version: 4.6.2
 Homepage: http://www.nublado.org
 Rules-Requires-Root: no
 

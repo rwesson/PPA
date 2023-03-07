@@ -1,3 +1,9 @@
+cloudy (22.01-1ppa1~focal1ubuntu1) focal; urgency=medium
+
+  * new upstream release
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 06 Mar 2023 12:32:24 +0000
+
 cloudy (17.03-1ppa1~focal1ubuntu3) focal; urgency=medium
 
   * added build dependency on binutils
