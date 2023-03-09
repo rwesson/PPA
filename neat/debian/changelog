@@ -1,3 +1,10 @@
+neat (2.4.2-1ppa1~focal1ubuntu1) focal; urgency=medium
+
+  * updated code to compile with gfortran>9
+  * fixed bug in strong-line O3N2 abundance calculation
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 09 Mar 2023 18:36:40 +0000
+
 neat (2.3.46-1ppa1~focal1ubuntu1) focal; urgency=medium
 
   * added option to manually specify Hbeta flux

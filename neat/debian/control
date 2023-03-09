@@ -2,10 +2,10 @@ Source: neat
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                gfortran,
                libcfitsio-dev
-Standards-Version: 4.5.0
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://github.com/rwesson/NEAT
 
