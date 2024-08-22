@@ -2,13 +2,13 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: bhmie
 Source: https://github.com/hyperion-rt/bhmie/archive/master.tar.gz
 
-Files: debian/*
-Copyright: 2016, Roger Wesson
-License: GPL-3+
-
 Files: *
 Copyright: (c) 2012-2013, Thomas P. Robitaille
 License: BSD-2-clause
+
+Files: debian/*
+Copyright: 2016, Roger Wesson
+License: GPL-3+
 
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify

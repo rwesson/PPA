@@ -2,12 +2,12 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: baposter
 Source: https://github.com/anriseth/baposter/archive/master.tar.gz
 
-Files: debian/*
-Copyright: 2019, Roger Wesson
-License: GPL-3+
-
 Files: *
 Copyright: (c) 2007-2011, Brian Amberg, Reinhold Kainhofer
+License: GPL-3+
+
+Files: debian/*
+Copyright: 2019, Roger Wesson
 License: GPL-3+
 
 License: GPL-3+
