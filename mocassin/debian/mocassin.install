@@ -3,3 +3,6 @@
 /usr/bin/mocassinPlot
 /usr/bin/mocassinWarm
 /usr/share/man/man1/mocassin.1.gz
+/usr/share/man/man1/mocassinOutput.1.gz
+/usr/share/man/man1/mocassinPlot.1.gz
+/usr/share/man/man1/mocassinWarm.1.gz
