@@ -2,10 +2,11 @@ Source: baposter
 Section: tex
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper-compat (= 12), tex-common
+Build-Depends: debhelper-compat (= 13), tex-common
 Build-Depends-Indep: texlive-base-bin, texlive-latex-base, texlive-latex-recommended, texlive-fonts-recommended, texlive-latex-extra
 Standards-Version: 4.6.2
 Homepage: https://github.com/anriseth/baposter
+Rules-Requires-Root: no
 
 Package: latex-baposter
 Architecture: all

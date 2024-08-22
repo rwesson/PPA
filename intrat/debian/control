@@ -2,9 +2,10 @@ Source: intrat
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper-compat (= 12), gfortran
+Build-Depends: debhelper-compat (= 13), gfortran
 Standards-Version: 4.6.2
 Homepage: http://cdsarc.u-strasbg.fr/cgi-bin/myqcat3?VI/64/
+Rules-Requires-Root: no
 
 Package: intrat
 Architecture: any

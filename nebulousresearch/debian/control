@@ -3,8 +3,9 @@ Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
 Homepage: https://launchpad.net/~nebulousresearch/+archive/ubuntu/ppa
-Build-Depends: debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
 Standards-Version: 4.6.2
+Rules-Requires-Root: no
 
 Package: nebulousresearch
 Architecture: all
@@ -22,8 +23,8 @@ Depends: alfa,
          voro++
 Multi-Arch: foreign
 Description: Tools for analysis of emission line nebulae
- A selection of packages for measuring and analysing emission line objects such 
- as planetary nebulae and HII regions.  Includes the following:
+ A selection of packages for measuring and analysing emission line objects such
+ as planetary nebulae and HII regions. Includes the following:
  .
  ALFA: Automated Line Fitting Algorithm (Wesson 2016)
  .

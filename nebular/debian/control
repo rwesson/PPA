@@ -2,10 +2,11 @@ Source: nebular
 Section: science
 Priority: optional
 Maintainer: Roger Wesson <rw@nebulousresearch.org>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                libgsl-dev | libgsl0-dev
 Standards-Version: 4.6.2
 Homepage: https://github.com/mischaschirmer/nebular
+Rules-Requires-Root: no
 
 Package: nebular
 Architecture: any
@@ -22,4 +23,3 @@ Description: Simple synthesis code for hydrogen and helium spectra
  educational purposes. NEBULAR can resample the spectrum on a user-defined
  wavelength grid for direct comparison with an observed spectrum; however, it
  can not be used to fit an observed spectrum.
-
