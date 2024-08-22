@@ -1,10 +1,10 @@
-nebulousresearch-backgrounds (1.0-1ppa1~jammy1ubuntu1) jammy; urgency=medium
+nebulousresearch-backgrounds (1.0-1ppa1~noble1ubuntu1) noble; urgency=medium
 
-  * package for jammy
+  * package for noble
 
  -- Roger Wesson <rw@nebulousresearch.org>  Tue, 10 Apr 2018 17:09:57 +0100
 
-nebulousresearch-backgrounds (1.0-1ppa1~jammy1) jammy; urgency=low
+nebulousresearch-backgrounds (1.0-1ppa1~noble1) noble; urgency=low
 
   * Initial release.
 

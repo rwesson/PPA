@@ -1,16 +1,28 @@
-voro++ (0.4.6-7ppa1~jammy1ubuntu1) jammy; urgency=medium
+voro++ (0.4.6-7ppa1~noble1ubuntu3) noble; urgency=medium
+
+  * fixed more install paths
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 22 Aug 2024 00:16:05 +0100
+
+voro++ (0.4.6-7ppa1~noble1ubuntu2) noble; urgency=medium
+
+  * fixed path of man page in debian/voro++.install
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 21 Aug 2024 23:40:21 +0100
+
+voro++ (0.4.6-7ppa1~noble1ubuntu1) noble; urgency=medium
 
   * used pkg-kde-tools
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 23:03:27 +0000
 
-voro++ (0.4.6-1ppa1~jammy1ubuntu6) jammy; urgency=medium
+voro++ (0.4.6-1ppa1~noble1ubuntu6) noble; urgency=medium
 
   * patched examples makefiles to compile out of the box
 
  -- Roger Wesson <rw@nebulousresearch.org>  Sat, 14 Jan 2017 22:41:34 +0000
 
-voro++ (0.4.6-1ppa1~jammy1ubuntu5) jammy; urgency=medium
+voro++ (0.4.6-1ppa1~noble1ubuntu5) noble; urgency=medium
 
   * packaging improvements
 
