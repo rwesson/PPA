@@ -1,2 +1,2 @@
 #! /usr/bin/dh-exec
-src/libvoro++*.so.* usr/lib/${DEB_HOST_MULTIARCH}/
+usr/lib/libvoro++*.so.* usr/lib/${DEB_HOST_MULTIARCH}/
