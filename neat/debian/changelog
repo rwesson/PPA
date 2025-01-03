@@ -1,3 +1,11 @@
+neat (2.4.6-1ppa1~jammy1ubuntu2) jammy; urgency=medium
+
+  * fixed incorrect data in ci.dat
+  * changed line assignment condition to avoid precision errors
+  * minor efficiency improvements
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Jun 2024 11:21:33 +0100
+
 neat (2.4.2-1ppa1~jammy1ubuntu1) jammy; urgency=medium
 
   * updated code to compile with gfortran>9
