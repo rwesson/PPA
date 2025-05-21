@@ -1,3 +1,18 @@
+alfa (2.2.35-1ppa1~noble1ubuntu1) noble; urgency=medium
+
+  * updated Makefile to allow parallel building
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 21 May 2025 14:02:35 +0100
+
+alfa (2.2.34-1ppa1~noble1ubuntu1) noble; urgency=medium
+
+  * included line lists for infrared data
+  * number of points in sections to be fitted can be set via command line
+  * fixed bug resulting from uninitialised flux
+  * added check for NaNs when reading in files
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 03 Mar 2025 21:45:24 +0000
+
 alfa (2.2-1ppa1~noble1ubuntu1) noble; urgency=medium
 
   * removed HeII Pickering lines from default line list, added new line list
