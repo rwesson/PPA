@@ -1,3 +1,9 @@
+mocassin (2.02.73.4-1ppa1~noble1ubuntu1) noble; urgency=medium
+
+  * updated Makefile to allow parallel building
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 21 May 2025 15:43:45 +0100
+
 mocassin (2.02.73.3-5ppa1~noble1ubuntu1) noble; urgency=medium
 
   * added all man pages to debian/mocassin.install
