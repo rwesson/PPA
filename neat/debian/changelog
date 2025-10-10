@@ -1,3 +1,9 @@
+neat (2.4.11-1ppa1~noble1ubuntu2) noble; urgency=medium
+
+  * added facility to deal with blended [O II] 7320/7330 lines
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 10 Oct 2025 14:02:13 +0100
+
 neat (2.4.7-1ppa1~noble1ubuntu1) noble; urgency=medium
 
   * updated Makefile to allow parallel building
