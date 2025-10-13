@@ -6,6 +6,6 @@
 *.gz
 *.deb
 *.rpm
-*.build
+*.build*
 *.dsc
 *.upload
