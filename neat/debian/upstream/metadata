@@ -1,0 +1,15 @@
+ASCL-Id: 1411.013
+Bug-Database: https://github.com/rwesson/NEAT/issues
+Bug-Submit: https://github.com/rwesson/NEAT/issues/new
+Reference:
+  Author: Wesson, R. and Stock, D., and Scicluna, P.
+  Title: "Understanding and reducing statistical uncertainties in nebular abundance determinations"
+  Journal: Monthly Notice of the Royal Astronomical Society
+  Year: 2012
+  Volume: 422
+  Pages: 3516-3526
+  DOI: 10.1111/j.1365-2966.2012.20863.x
+  URL: http://adsabs.harvard.edu/abs/2012MNRAS.422.3516W
+  eprint: http://arxiv.org/abs/1203.0567
+Repository: https://github.com/rwesson/NEAT.git
+Repository-Browse: https://github.com/rwesson/NEAT
