@@ -1,3 +1,38 @@
+neat (2.4.11-1ppa1~trusty1ubuntu4) trusty; urgency=medium
+
+  * added facility to deal with blended [O II] 7320/7330 lines
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 10 Oct 2025 14:02:13 +0100
+
+neat (2.4.7-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated Makefile to allow parallel building
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 21 May 2025 15:42:43 +0100
+
+neat (2.4.6-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * fixed incorrect data in ci.dat
+  * changed line assignment condition to avoid precision errors
+  * minor efficiency improvements
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Jun 2024 11:21:33 +0100
+
+neat (2.4.2-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * updated code to compile with gfortran>9
+  * fixed bug in strong-line O3N2 abundance calculation
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Thu, 09 Mar 2023 18:36:40 +0000
+
+neat (2.3.46-1ppa1~trusty1ubuntu1) trusty; urgency=medium
+
+  * added option to manually specify Hbeta flux
+  * added option to disable parallelisation
+  * ensured memory freed on exit
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 25 Feb 2022 10:22:07 +0000
+
 neat (2.3.41-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
   * deallocate arrays at end of calculations
@@ -65,6 +100,12 @@ neat (2.3-1ppa1~trusty1ubuntu1) trusty; urgency=medium
   * implemented FITS reading and writing. FITS files produced by ALFA can be read in, and the results will be added to the file. Text output is deprecated and will be removed in a future release.
 
  -- Roger Wesson <rw@nebulousresearch.org>  Thu, 04 Jun 2020 15:48:57 +0100
+
+neat (2.2.40-1ppa1~trusty1ubuntu2) trusty; urgency=medium
+
+  * specified no parallel build in debian/rules
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Mon, 02 Mar 2020 21:52:05 +0000
 
 neat (2.2.40-1ppa1~trusty1ubuntu1) trusty; urgency=medium
 
