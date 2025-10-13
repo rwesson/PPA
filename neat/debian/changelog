@@ -1,8 +1,22 @@
-neat (2.4.2-1ppa1~focal1ubuntu2) focal; urgency=medium
+neat (2.4.11-1ppa1~focal1ubuntu4) focal; urgency=medium
 
-  * debhelper-compat 13 not available in focal
+  * added facility to deal with blended [O II] 7320/7330 lines
 
- -- Roger Wesson <rw@nebulousresearch.org>  Thu, 09 Mar 2023 18:50:56 +0000
+ -- Roger Wesson <rw@nebulousresearch.org>  Fri, 10 Oct 2025 14:02:13 +0100
+
+neat (2.4.7-1ppa1~focal1ubuntu1) focal; urgency=medium
+
+  * updated Makefile to allow parallel building
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 21 May 2025 15:42:43 +0100
+
+neat (2.4.6-1ppa1~focal1ubuntu2) focal; urgency=medium
+
+  * fixed incorrect data in ci.dat
+  * changed line assignment condition to avoid precision errors
+  * minor efficiency improvements
+
+ -- Roger Wesson <rw@nebulousresearch.org>  Wed, 05 Jun 2024 11:21:33 +0100
 
 neat (2.4.2-1ppa1~focal1ubuntu1) focal; urgency=medium
 
